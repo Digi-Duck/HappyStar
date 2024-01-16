@@ -352,9 +352,10 @@ main .service .container::after {
 }
 main .service .container .service-line {
   position: absolute;
-  top: 5%;
-  left: 0;
-  width: 101%;
+  top: 0;
+  left: -3px;
+  height: 100%;
+  pointer-events: none;
   z-index: 1;
 }
 main .service .container .title {
