@@ -404,7 +404,118 @@ main {
   }
   // Photo //
   .marquee {
-    padding: 50px 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 40px;
+    .title {
+      text-align: center;
+      color: var(--first-color);
+      font-size: var(--font-size-title);
+      font-weight: var(--font-weight-bold);
+      letter-spacing: 8px;
+      span {
+        background: linear-gradient(to bottom, #3b6580, #d1d1d1, #ffffff);
+        background: -webkit-linear-gradient(
+          to bottom,
+          #3b6580,
+          #d1d1d1,
+          #ffffff
+        );
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent;
+        font-family: "Italianno", cursive;
+        font-size: 128px;
+        font-weight: 400;
+      }
+    }
+    .photo-container {
+      display: flex;
+      flex-direction: column;
+      align-items: end;
+      .view {
+        overflow: hidden;
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        &:nth-of-type(2) {
+          position: relative;
+          left: -10%;
+          align-items: start;
+          .pic-container {
+            display: flex;
+            flex-flow: row-reverse;
+            margin-top: -8%;
+            animation: toRight 20s infinite linear;
+            @keyframes toRight {
+              0% {
+                transform: translateX(0);
+              }
+              100% {
+                transform: translateX((20% * 5));
+              }
+            }
+            .pic {
+              flex-basis: 20%;
+              flex-shrink: 0;
+              img {
+                width: 100%;
+                height: 100%;
+                vertical-align: middle;
+              }
+            }
+          }
+        }
+        img {
+          width: 90%;
+        }
+        .pic-container {
+          display: flex;
+          margin-top: -8%;
+          animation: toLeft 20s infinite linear;
+          @keyframes toLeft {
+            0% {
+              transform: translateX(0);
+            }
+            100% {
+              transform: translateX(-(20% * 5));
+            }
+          }
+          .pic {
+            flex-basis: 20%;
+            flex-shrink: 0;
+            img {
+              width: 100%;
+              height: 100%;
+              vertical-align: middle;
+            }
+          }
+        }
+      }
+    }
+    .more {
+      display: inline-block;
+      width: 200px;
+      height: 60px;
+      background-color: var(--secondary-color);
+      color: var(--sup-one);
+      box-shadow: 0 0 12px #d1d1d1bb;
+      font-size: var(--font-size-describe);
+      font-weight: var(--font-weight-bold);
+      margin-top: 32px;
+      text-align: center;
+      line-height: 60px;
+      letter-spacing: 4px;
+      &:hover {
+        background-color: var(--first-color);
+      }
+    }
+  }
+  // Related //
+  .more-link {
     width: 100%;
     .title {
       text-align: center;
@@ -428,29 +539,10 @@ main {
         font-weight: 400;
       }
     }
-    .view {
-      overflow: hidden;
-      width: 100%;
-      .pic-container {
-        display: flex;
-        animation: marquee 20s infinite linear;
-        .pic {
-          flex-basis: 20%;
-          flex-shrink: 0;
-          img {
-            width: 100%;
-            vertical-align: middle;
-          }
-        }
-      }
-      @keyframes marquee {
-        0% {
-          transform: translateX(0);
-        }
-        100% {
-          transform: translateX(-(20% * 5));
-        }
-      }
+    .container{
+      background-color: var(--sup-one);
+      padding: 40px 0;
+      
     }
   }
 }
