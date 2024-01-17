@@ -221,7 +221,7 @@ main {
       position: relative;
       width: 100%;
       height: 1160px;
-      .about-imgR{
+      .about-imgR {
         position: absolute;
         right: 5%;
         bottom: 0%;
@@ -254,7 +254,7 @@ main {
         background-color: var(--sup-one);
         box-shadow: 0 0 12px #a7444466;
         z-index: 1;
-        .about-imgL{
+        .about-imgL {
           position: absolute;
           top: -49.6%;
           left: -35px;
@@ -267,12 +267,7 @@ main {
           font-weight: var(--font-weight-bold);
           letter-spacing: 8px;
           span {
-            background: linear-gradient(
-              to bottom,
-              #3b6580,
-              #d1d1d1,
-              #ffffff
-            );
+            background: linear-gradient(to bottom, #3b6580, #d1d1d1, #ffffff);
             background: -webkit-linear-gradient(
               to bottom,
               #3b6580,
@@ -306,7 +301,7 @@ main {
           text-align: center;
           line-height: 60px;
           letter-spacing: 4px;
-          &:hover{
+          &:hover {
             background-color: var(--first-color);
           }
         }
@@ -324,20 +319,21 @@ main {
     }
   }
   // Service //
-  .service{
+  .service {
     position: relative;
     width: 100%;
     margin-top: 60px;
-    .container{
+    .container {
       position: relative;
       width: 100%;
-      display: flex;flex-direction: column;
+      display: flex;
+      flex-direction: column;
       align-items: center;
       background-color: #a7444433;
       padding-block: 200px;
       overflow: hidden;
-      &::before{
-        content:'';
+      &::before {
+        content: "";
         position: absolute;
         top: 0;
         left: 0;
@@ -347,8 +343,8 @@ main {
         background-size: cover;
         background-position: center;
       }
-      &::after{
-        content:'';
+      &::after {
+        content: "";
         position: absolute;
         bottom: 0;
         left: 0;
@@ -358,7 +354,7 @@ main {
         background-size: cover;
         background-position: center;
       }
-      .service-line{
+      .service-line {
         position: absolute;
         top: 0;
         left: -3px;
@@ -372,12 +368,7 @@ main {
         font-weight: var(--font-weight-bold);
         letter-spacing: 8px;
         span {
-          background: linear-gradient(
-            to bottom,
-            #3b6580,
-            #d1d1d1,
-            #ffffff
-          );
+          background: linear-gradient(to bottom, #3b6580, #d1d1d1, #ffffff);
           background: -webkit-linear-gradient(
             to bottom,
             #3b6580,
@@ -405,14 +396,64 @@ main {
         text-align: center;
         line-height: 60px;
         letter-spacing: 4px;
-        &:hover{
+        &:hover {
           background-color: var(--first-color);
         }
       }
     }
   }
+  // Photo //
+  .marquee {
+    padding: 50px 0;
+    width: 100%;
+    .title {
+      text-align: center;
+      color: var(--first-color);
+      font-size: var(--font-size-title);
+      font-weight: var(--font-weight-bold);
+      letter-spacing: 8px;
+      span {
+        background: linear-gradient(to bottom, #3b6580, #d1d1d1, #ffffff);
+        background: -webkit-linear-gradient(
+          to bottom,
+          #3b6580,
+          #d1d1d1,
+          #ffffff
+        );
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent;
+        font-family: "Italianno", cursive;
+        font-size: 128px;
+        font-weight: 400;
+      }
+    }
+    .view {
+      overflow: hidden;
+      width: 100%;
+      .pic-container {
+        display: flex;
+        animation: marquee 20s infinite linear;
+        .pic {
+          flex-basis: 20%;
+          flex-shrink: 0;
+          img {
+            width: 100%;
+            vertical-align: middle;
+          }
+        }
+      }
+      @keyframes marquee {
+        0% {
+          transform: translateX(0);
+        }
+        100% {
+          transform: translateX(-(20% * 5));
+        }
+      }
+    }
+  }
 }
-
 // Footer //
 .footer {
   width: 100%;
