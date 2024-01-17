@@ -271,8 +271,8 @@ main .about .container .about-detail .title {
   letter-spacing: 8px;
 }
 main .about .container .about-detail .title span {
-  background: linear-gradient(to bottom, #3b6580, #d1d1d1, #a74444);
-  background: -webkit-linear-gradient(to bottom, #3b6580, #d1d1d1, #a74444);
+  background: linear-gradient(to bottom, #3b6580, #d1d1d1, #ffffff);
+  background: -webkit-linear-gradient(to bottom, #3b6580, #d1d1d1, #ffffff);
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
@@ -365,8 +365,8 @@ main .service .container .title {
   letter-spacing: 8px;
 }
 main .service .container .title span {
-  background: linear-gradient(to bottom, #3b6580, #d1d1d1, #a74444);
-  background: -webkit-linear-gradient(to bottom, #3b6580, #d1d1d1, #a74444);
+  background: linear-gradient(to bottom, #3b6580, #d1d1d1, #ffffff);
+  background: -webkit-linear-gradient(to bottom, #3b6580, #d1d1d1, #ffffff);
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
