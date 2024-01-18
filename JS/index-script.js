@@ -28,16 +28,16 @@ window.onload = function () {
         return window.scrollY
     });
 
-    lax.addElements('.about-imgL', {
+    lax.addElements('.news', {
         scrollY: {
             translateX: [
-                ["elInY", "elCenterY", "elOutY"],
-                [0, 500, 600],
-            ],
-
-        }
+              ['elOutY','elCenterY','elInY' ],
+              [-1380, 'screenWidth/2', 'screenWidth'],
+            ]
+          }
+          
     })
-
+    console.log(scrollY);
 };
 // AOS.js 動畫
 

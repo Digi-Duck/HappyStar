@@ -172,7 +172,7 @@ header .container .banner {
 }
 header .container .banner img {
   width: 100%;
-  animation: bannerOpacity 1.5s linear 0.8s forwards;
+  /* animation: bannerOpacity 1.5s linear 0.8s forwards; */
 }
 @keyframes bannerOpacity {
   0% {
