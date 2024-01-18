@@ -529,7 +529,7 @@ main .more-link .related-img {
   top: -5%;
   right: 8%;
   width: 270px;
-  z-index: -2;
+  z-index: 2;
 }
 main .more-link .container {
   background-color: var(--sup-one);

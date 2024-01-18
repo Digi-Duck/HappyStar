@@ -28,15 +28,15 @@ window.onload = function () {
         return window.scrollY
     });
 
-    // lax.addElements('.', {
-    //     scrollY: {
-    //         translateX: [
-    //           ['elOutY','elCenterY','elInY' ],
-    //           [-1380, 'screenWidth/2', 'screenWidth'],
-    //         ]
-    //       }
+    lax.addElements('.about-imgL', {
+        scrollY: {
+            translateX: [
+              ['elInY','elCenterY','elOutY' ],
+              [0, '250', '500'],
+            ]
+          }
           
-    // })
+    })
     
 };
 // AOS.js 動畫
