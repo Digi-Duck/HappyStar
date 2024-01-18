@@ -32,13 +32,45 @@ body {
   height: 100%;
   background-color: var(--main-color);
   font-family: var(--main-font);
-  .background{
+  .background {
     position: absolute;
     top: 0;
     right: 0;
-    width:75%;
+    width: 75%;
     max-width: 1440px;
     z-index: -2;
+  }
+  .goTop {
+    position: absolute;
+    right: 50px;
+    bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    color: var(--first-color);
+    background-color: var(--sup-one);
+    box-shadow: 0 0 8px #a74444bb;
+    z-index: 3;
+    i,
+    p {
+      display: inline-block;
+      color: var(--first-color);
+      font-size: 18px;
+    }
+    i{
+      transition: all 0.2s ease;
+    }
+    &:hover {
+      cursor: pointer;
+      background-color: var(--main-color);
+    }
+    &:hover i{
+      transform: translateY(-5px);
+    }
   }
 }
 a {
@@ -85,11 +117,11 @@ ul {
         color: var(--main-color);
         background-color: var(--first-color);
       }
-      &:nth-child(6) a {
+      &:nth-child(5) a {
         color: var(--main-color);
         background-color: var(--first-color);
       }
-      &:nth-child(7) a {
+      &:nth-child(6) a {
         padding: 14px;
         border: 2px solid var(--first-color);
       }
@@ -130,6 +162,7 @@ ul {
 header {
   width: 100%;
   position: relative;
+  overflow: hidden;
   .container {
     position: relative;
     width: 100%;
@@ -164,70 +197,15 @@ header {
     }
   }
   .news {
-    height: 150px;
-    width: 55%;
-    position: absolute;
-    right: 0;
-    bottom: -75px;
-    background-color: var(--sup-one);
-    display: flex;
-    align-items: center;
-    box-shadow: 0 0 12px #a7444466;
-    padding: 16px 24px;
-    color: var(--secondary-color);
-    font-weight: var(--font-weight-medium);
-    p {
-      position: relative;
-      font-size: 28px;
-      writing-mode: vertical-lr;
-      padding-right: 24px;
-      letter-spacing: 1px;
-      &::after {
-        content: "";
-        position: absolute;
-        right: 0;
-        top: 50%;
-        transform: translateY(-50%);
-        width: 3px;
-        height: 56px;
-        background-color: var(--secondary-color);
-      }
-    }
-    .news-detail {
-      display: flex;
-      flex-direction: column;
-      gap: 12px;
-      font-size: var(--font-size-describe);
-      padding-left: 32px;
-      .detail {
-        display: flex;
-        align-items: center;
-        .news-sort {
-          padding: 2px 6px;
-          background-color: var(--secondary-color);
-          color: var(--sup-one);
-          margin-right: 8px;
-        }
-        a {
-          font-weight: var(--font-weight-medium);
-          color: var(--secondary-color);
-          letter-spacing: 2px;
-          &:hover {
-            color: var(--first-color);
-          }
-        }
-        .news-date {
-          margin-right: 8px;
-        }
-      }
-    }
+    width: 90%;
+    transform: translate(30%, -40%);
   }
 }
 // About //
 main {
   width: 100%;
   .about {
-    margin-top: 175px;
+    margin-top: -50px;
     width: 100%;
     .container {
       position: relative;
@@ -241,7 +219,7 @@ main {
       }
       .about-imgOne {
         position: relative;
-        top: 0;
+        top: -10%;
         left: 100%;
         transform: translateX(-100%);
         width: 900px;
@@ -253,7 +231,7 @@ main {
       }
       .about-detail {
         position: relative;
-        top: -40%;
+        top: -50%;
         left: 40%;
         transform: translate(-50%);
         display: flex;
@@ -268,10 +246,9 @@ main {
         z-index: 1;
         .about-imgL {
           position: absolute;
-          top: -49.6%;
-          left: -35px;
-          width: 273px;
-          height: 300px;
+          top: -37%;
+          left: -5px;
+          height: 220px;
         }
         .title {
           color: var(--first-color);
@@ -557,29 +534,28 @@ main {
         font-weight: 400;
       }
     }
-    .related-img{
+    .related-img {
       position: absolute;
       top: -5%;
       right: 8%;
       width: 270px;
       z-index: -2;
     }
-    .container{
+    .container {
       background-color: var(--sup-one);
       padding: 40px 0;
-     
-      
-      .link{
+
+      .link {
         display: flex;
         justify-content: center;
         padding: 60px 0;
         gap: 16px;
         border-top: 1px solid var(--first-color);
         border-bottom: 1px solid var(--first-color);
-       
-        a{
+
+        a {
           display: inline-block;
-          img{
+          img {
             width: 200px;
           }
         }
