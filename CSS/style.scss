@@ -30,16 +30,13 @@ body {
   max-width: 1920px;
   margin: auto;
   height: 100%;
-  background-color: var(--main-color);
   font-family: var(--main-font);
-  .background {
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 75%;
-    max-width: 1440px;
-    z-index: -2;
-  }
+  background-color: var(--main-color);
+  background-image: url(../Image/BG/bg-1.jpg);
+  background-repeat: no-repeat;
+  background-position:top right;
+  background-size: 78%;
+
   .goTop {
     position: absolute;
     right: 50px;
@@ -61,14 +58,14 @@ body {
       color: var(--first-color);
       font-size: 18px;
     }
-    i{
+    i {
       transition: all 0.2s ease;
     }
     &:hover {
       cursor: pointer;
       background-color: var(--main-color);
     }
-    &:hover i{
+    &:hover i {
       transform: translateY(-5px);
     }
   }
@@ -177,13 +174,12 @@ header {
         width: 100%;
         animation: bannerOpacity 1.5s linear 0.8s forwards;
         @keyframes bannerOpacity {
-          0%{
+          0% {
             opacity: 0;
           }
-          100%{
+          100% {
             opacity: 1;
           }
-          
         }
       }
     }
@@ -411,6 +407,7 @@ main {
     margin-bottom: 40px;
     margin-top: 40px;
     .title {
+      position: relative;
       text-align: center;
       color: var(--first-color);
       font-size: var(--font-size-title);
