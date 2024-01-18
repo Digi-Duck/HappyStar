@@ -29,16 +29,12 @@ body {
   max-width: 1920px;
   margin: auto;
   height: 100%;
-  background-color: var(--main-color);
   font-family: var(--main-font);
-}
-body .background {
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 75%;
-  max-width: 1440px;
-  z-index: -2;
+  background-color: var(--main-color);
+  background-image: url(../Image/BG/bg-1.jpg);
+  background-repeat: no-repeat;
+  background-position: top right;
+  background-size: 78%;
 }
 body .goTop {
   position: absolute;
@@ -398,6 +394,7 @@ main .marquee {
   margin-top: 40px;
 }
 main .marquee .title {
+  position: relative;
   text-align: center;
   color: var(--first-color);
   font-size: var(--font-size-title);
@@ -416,17 +413,9 @@ main .marquee .title span {
   font-weight: 400;
 }
 main .marquee .photo-container {
-  position: relative;
   display: flex;
   flex-direction: column;
   align-items: end;
-}
-main .marquee .photo-container .photo-imgL {
-  width: 220px;
-  position: absolute;
-  top: -1%;
-  left: 9%;
-  z-index: 1;
 }
 main .marquee .photo-container .view {
   overflow: hidden;
