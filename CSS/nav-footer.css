@@ -197,7 +197,7 @@ body .goTop:hover i {
 .footer .container .store {
   display: flex;
   align-items: center;
-  gap: 16px;
+  gap: 24px;
 }
 .footer .container .store .store-info {
   display: flex;
