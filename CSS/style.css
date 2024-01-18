@@ -416,9 +416,17 @@ main .marquee .title span {
   font-weight: 400;
 }
 main .marquee .photo-container {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: end;
+}
+main .marquee .photo-container .photo-imgL {
+  width: 220px;
+  position: absolute;
+  top: -1%;
+  left: 9%;
+  z-index: 1;
 }
 main .marquee .photo-container .view {
   overflow: hidden;

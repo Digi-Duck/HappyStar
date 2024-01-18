@@ -434,9 +434,17 @@ main {
       }
     }
     .photo-container {
+      position: relative;
       display: flex;
       flex-direction: column;
       align-items: end;
+      .photo-imgL{
+        width: 220px;
+        position: absolute;
+        top: -1%;
+        left: 9%;
+        z-index: 1;
+      }
       .view {
         overflow: hidden;
         width: 90%;
