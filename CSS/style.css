@@ -23,20 +23,38 @@
   box-sizing: border-box;
 }
 
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
 body {
-  position: relative;
   width: 100%;
   max-width: 1920px;
+  height: 100%;
   margin: auto;
+  scroll-behavior: smooth;
+}
+body .main-container {
+  position: relative;
+  width: 100%;
   height: 100%;
   font-family: var(--main-font);
   background-color: var(--main-color);
-  background-image: url(../Image/BG/bg-1.jpg);
-  background-repeat: no-repeat;
-  background-position: top right;
-  background-size: 78%;
 }
-body .goTop {
+body .main-container .background {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 75%;
+}
+body .main-container .background img {
+  width: 100%;
+}
+body .main-container .goTop {
   position: absolute;
   right: 50px;
   bottom: 50px;
@@ -52,40 +70,30 @@ body .goTop {
   box-shadow: 0 0 8px rgba(167, 68, 68, 0.7333333333);
   z-index: 3;
 }
-body .goTop i,
-body .goTop p {
+body .main-container .goTop i,
+body .main-container .goTop p {
   display: inline-block;
   color: var(--first-color);
   font-size: 18px;
 }
-body .goTop i {
+body .main-container .goTop i {
   transition: all 0.2s ease;
 }
-body .goTop:hover {
+body .main-container .goTop:hover {
   cursor: pointer;
   background-color: var(--main-color);
 }
-body .goTop:hover i {
+body .main-container .goTop:hover i {
   transform: translateY(-5px);
-}
-
-a {
-  text-decoration: none;
-}
-
-ul {
-  list-style: none;
 }
 
 .navbar {
   position: sticky;
   top: 0;
-  right: 0;
-  bottom: 0;
   left: 0;
   padding: 0 104px;
   width: 100%;
-  height: 80px;
+  height: 100px;
   background-color: var(--white);
   font-size: var(--font-size-subtitle);
   font-weight: var(--font-weight-semibold);
@@ -172,7 +180,7 @@ header .container .banner {
 }
 header .container .banner img {
   width: 100%;
-  animation: bannerOpacity 1.5s linear 0.8s forwards;
+  animation: bannerOpacity 1s linear 0.5s forwards;
 }
 @keyframes bannerOpacity {
   0% {
@@ -599,4 +607,4 @@ main .more-link .container .link a img {
 }
 .footer .container .store .store-info p i {
   margin-right: 4px;
-}
+}/*# sourceMappingURL=style.css.map */

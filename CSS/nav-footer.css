@@ -23,12 +23,20 @@
   box-sizing: border-box;
 }
 
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
 body {
   position: relative;
   width: 100%;
   max-width: 1920px;
-  margin: auto;
   height: 100%;
+  margin: auto;
   background-color: var(--main-color);
   font-family: var(--main-font);
 }
@@ -65,16 +73,8 @@ body .goTop:hover i {
   transform: translateY(-5px);
 }
 
-a {
-  text-decoration: none;
-}
-
-ul {
-  list-style: none;
-}
-
 .navbar {
-  position: sticky;
+  position: fixed;
   top: 0;
   right: 0;
   bottom: 0;
@@ -206,4 +206,4 @@ ul {
 }
 .footer .container .store .store-info p i {
   margin-right: 4px;
-}
+}/*# sourceMappingURL=nav-footer.css.map */
