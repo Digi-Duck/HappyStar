@@ -37,7 +37,7 @@ window.onload = function () {
           }
           
     })
-    console.log(scrollY);
+    
 };
 // AOS.js 動畫
 
