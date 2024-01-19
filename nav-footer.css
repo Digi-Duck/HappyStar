@@ -1,0 +1,220 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@200;300;400;500;600;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Italianno&family=Noto+Sans+JP:wght@300;500;700;900&display=swap");
+:root {
+  --main-font: "Noto Serif TC", serif;
+  --main-color: #ffe2d7;
+  --first-color: #a74444;
+  --secondary-color: #3b6580;
+  --sup-one: #faf8ef;
+  --sup-two: #f0e6bc;
+  --white: #ffffff;
+  --font-size-title: 48px;
+  --font-size-sec-title: 32px;
+  --font-size-subtitle: 24px;
+  --font-size-describe: 20px;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+body {
+  width: 100%;
+  max-width: 1920px;
+  height: 100%;
+  margin: auto;
+  scroll-behavior: smooth;
+}
+body .main-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  font-family: var(--main-font);
+  background-color: var(--main-color);
+}
+body .main-container .banner {
+  width: 100%;
+}
+body .main-container .banner img {
+  width: 100%;
+}
+body .goTop {
+  position: absolute;
+  right: 50px;
+  bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  color: var(--first-color);
+  background-color: var(--sup-one);
+  box-shadow: 0 0 8px rgba(167, 68, 68, 0.7333333333);
+  z-index: 3;
+}
+body .goTop i,
+body .goTop p {
+  display: inline-block;
+  color: var(--first-color);
+  font-size: 18px;
+}
+body .goTop i {
+  transition: all 0.2s ease;
+}
+body .goTop:hover {
+  cursor: pointer;
+  background-color: var(--main-color);
+}
+body .goTop:hover i {
+  transform: translateY(-5px);
+}
+
+.navbar {
+  position: sticky;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 0 104px;
+  width: 100%;
+  height: 100px;
+  background-color: var(--white);
+  font-size: var(--font-size-subtitle);
+  font-weight: var(--font-weight-semibold);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 2;
+}
+.navbar .logo {
+  width: 268px;
+  height: 60px;
+}
+.navbar .logo img {
+  width: 100%;
+  height: 100%;
+}
+.navbar .nav {
+  display: flex;
+  gap: 4px;
+}
+.navbar .nav .nav-item {
+  font-weight: var(--font-weight-semibold);
+}
+.navbar .nav .nav-item a {
+  padding: 16px;
+  color: var(--secondary-color);
+}
+.navbar .nav .nav-item:hover a {
+  color: var(--main-color);
+  background-color: var(--first-color);
+}
+.navbar .nav .nav-item:nth-child(5) a {
+  color: var(--main-color);
+  background-color: var(--first-color);
+}
+.navbar .nav .nav-item:nth-child(6) a {
+  padding: 14px;
+  border: 2px solid var(--first-color);
+}
+.navbar .nav .service {
+  position: relative;
+}
+.navbar .nav .service:hover .navlist {
+  display: block;
+}
+.navbar .nav .service .navlist {
+  display: none;
+  width: 288px;
+  height: auto;
+  position: absolute;
+  top: 50px;
+  left: 0;
+  text-align: center;
+  z-index: 1;
+}
+.navbar .nav .service .navlist .list-item:hover a {
+  color: var(--secondary-color);
+  background-color: var(--sup-one);
+}
+.navbar .nav .service .navlist a {
+  display: inline-block;
+  width: 100%;
+  padding: 18px 36px;
+  color: var(--sup-one);
+  background-color: var(--first-color);
+}
+
+.footer {
+  width: 100%;
+  height: 300px;
+}
+.footer .container {
+  width: 100%;
+  height: 100%;
+  background-color: var(--white);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 104px;
+  color: var(--secondary-color);
+  font-size: var(--font-size-describe);
+  font-weight: var(--font-weight-medium);
+}
+.footer .container .info {
+  width: 640px;
+}
+.footer .container .info .content-img {
+  width: 100%;
+  height: 60px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 30px;
+}
+.footer .container .info .content-img img {
+  height: 60px;
+}
+.footer .container .info .content {
+  margin-top: 30px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+.footer .container .info .content li:hover a {
+  color: var(--main-color);
+}
+.footer .container .info .content li a {
+  padding: 4px 8px;
+  color: var(--secondary-color);
+}
+.footer .container .store {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+.footer .container .store .store-info {
+  display: flex;
+  flex-direction: column;
+  font-size: var(--font-size-describe);
+  gap: 8px;
+}
+.footer .container .store .store-info p i {
+  margin-right: 4px;
+}/*# sourceMappingURL=nav-footer.css.map */
