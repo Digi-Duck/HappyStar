@@ -18,30 +18,14 @@
   --font-weight-bold: 700;
 }
 
-.main-container {
-  background-color: var(--main-color);
-}
 .main-container .main-content {
   width: 100%;
+  background-color: var(--sup-two);
+}
+.main-container .main-content .store {
+  margin: auto;
 }
 .main-container .main-content .store .store-info {
-  display: flex;
-  padding-block: 80px;
-  margin: auto;
   width: 1216px;
-}
-.main-container .main-content .store .store-info .store-detail {
-  background-color: var(--sup-two);
-  width: 608px;
   height: 456px;
-  padding-block: 36px;
-  border-radius: 0 16px 16px 0;
-}
-.main-container .main-content .store .store-info .store-detail .test-detail {
-  width: 572px;
-  height: 384px;
-  border-style: solid;
-  border-width: 4px 4px 4px 0;
-  border-color: var(--first-color);
-  border-radius: 0 16px 16px 0;
 }/*# sourceMappingURL=contact.css.map */
