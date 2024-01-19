@@ -37,12 +37,12 @@ body {
   height: 100%;
   margin: auto;
   scroll-behavior: smooth;
+  font-family: var(--main-font);
 }
 body .main-container {
   position: relative;
   width: 100%;
   height: 100%;
-  font-family: var(--main-font);
   background-color: var(--main-color);
 }
 body .main-container .banner {
@@ -207,13 +207,13 @@ body .goTop:hover i {
 .footer .container .store {
   display: flex;
   align-items: center;
-  gap: 24px;
+  gap: 32px;
 }
 .footer .container .store .store-info {
   display: flex;
   flex-direction: column;
   font-size: var(--font-size-describe);
-  gap: 8px;
+  gap: 12px;
 }
 .footer .container .store .store-info p i {
   margin-right: 4px;
