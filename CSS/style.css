@@ -180,16 +180,8 @@ header .container .banner {
 }
 header .container .banner img {
   width: 100%;
-  animation: bannerOpacity 1s linear 0.5s forwards;
 }
-@keyframes bannerOpacity {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
+
 header .container .banner-title {
   width: 40%;
   position: absolute;
