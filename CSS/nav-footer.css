@@ -99,7 +99,7 @@ body .goTop:hover i {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  z-index: 2;
+  z-index: 10;
 }
 .navbar .logo {
   width: 268px;
@@ -129,7 +129,7 @@ body .goTop:hover i {
   background-color: var(--first-color);
 }
 .navbar .nav .nav-item:nth-child(6) a {
-  padding: 14px;
+  padding-block: 14px;
   border: 2px solid var(--first-color);
 }
 .navbar .nav .service {

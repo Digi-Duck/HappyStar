@@ -100,7 +100,7 @@ body .main-container .goTop:hover i {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  z-index: 2;
+  z-index: 10;
 }
 .navbar .logo {
   width: 268px;
@@ -130,7 +130,7 @@ body .main-container .goTop:hover i {
   background-color: var(--first-color);
 }
 .navbar .nav .nav-item:nth-child(6) a {
-  padding: 14px;
+  padding-block: 14px;
   border: 2px solid var(--first-color);
 }
 .navbar .nav .service {
@@ -640,7 +640,29 @@ main .more-link .container .link a img {
     width: 201px;
     height: 45px;
   }
-  .nav {
-    gap: 4px;
+  .navbar .nav {
+    gap: 2px;
+  }
+  .navbar .nav .nav-item a {
+    padding: 16px 4px;
+  }
+}
+@media (max-width: 880px) {
+  .footer .container {
+    flex-direction: column;
+  }
+  .footer .container .info {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  .footer .container .info .content-img {
+    width: 320px;
+  }
+  .footer .container .info .content {
+    margin-top: 0;
+  }
+  .footer .container .info .content li a {
+    padding: 0;
   }
 }/*# sourceMappingURL=style.css.map */
