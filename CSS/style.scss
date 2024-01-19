@@ -595,6 +595,7 @@ main {
     font-size: var(--font-size-describe);
     font-weight: var(--font-weight-medium);
     .info {
+      width: 640px;
       .content-img {
         width: 100%;
         height: 60px;
@@ -608,7 +609,7 @@ main {
       }
       .content {
         margin-top: 30px;
-        width: 640px;
+        width: 100%;
         display: flex;
         flex-wrap: wrap;
         gap: 16px;
@@ -655,6 +656,23 @@ main {
       }
       .store{
         gap: 12px;
+      }
+    }
+  }
+}
+@media (max-width:1280px) {
+  .footer{
+    .container{
+      font-size: 16px;
+      .info{
+        width: 500px;
+        .content-img {
+          height: 40px;
+        }
+      }
+      .content{
+        margin-top: 0px;
+        gap: 8px;
       }
     }
   }

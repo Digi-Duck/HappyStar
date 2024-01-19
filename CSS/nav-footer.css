@@ -177,7 +177,7 @@ body .goTop:hover i {
   font-weight: var(--font-weight-medium);
 }
 .footer .container .info {
-  width: auto;
+  width: 640px;
 }
 .footer .container .info .content-img {
   width: 100%;
@@ -192,13 +192,12 @@ body .goTop:hover i {
 }
 .footer .container .info .content {
   margin-top: 30px;
-  width: 640px;
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
   gap: 16px;
 }
 .footer .container .info .content li:hover a {
-  background-color: var(--first-color);
   color: var(--main-color);
 }
 .footer .container .info .content li a {
@@ -213,6 +212,7 @@ body .goTop:hover i {
 .footer .container .store .store-info {
   display: flex;
   flex-direction: column;
+  font-size: var(--font-size-describe);
   gap: 8px;
 }
 .footer .container .store .store-info p i {

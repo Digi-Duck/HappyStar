@@ -566,6 +566,9 @@ main .more-link .container .link a img {
   font-size: var(--font-size-describe);
   font-weight: var(--font-weight-medium);
 }
+.footer .container .info {
+  width: 640px;
+}
 .footer .container .info .content-img {
   width: 100%;
   height: 60px;
@@ -579,7 +582,7 @@ main .more-link .container .link a img {
 }
 .footer .container .info .content {
   margin-top: 30px;
-  width: 640px;
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
   gap: 16px;
@@ -618,5 +621,20 @@ main .more-link .container .link a img {
   }
   .footer .container .store {
     gap: 12px;
+  }
+}
+@media (max-width: 1280px) {
+  .footer .container {
+    font-size: 16px;
+  }
+  .footer .container .info {
+    width: 500px;
+  }
+  .footer .container .info .content-img {
+    height: 40px;
+  }
+  .footer .container .content {
+    margin-top: 0px;
+    gap: 8px;
   }
 }/*# sourceMappingURL=style.css.map */
