@@ -31,13 +31,17 @@ ul {
   list-style: none;
 }
 body {
-  position: relative;
   width: 100%;
   max-width: 1920px;
   height: 100%;
   margin: auto;
-  background-color: var(--main-color);
-  font-family: var(--main-font);
+  scroll-behavior: smooth;
+  .main-container{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    font-family: var(--main-font);
+    background-color: var(--main-color);
  
   .goTop {
     position: absolute;
@@ -75,14 +79,14 @@ body {
 
 //  Navbar //
 .navbar {
-  position: fixed;
+  position: sticky;
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
   padding: 0 104px;
   width: 100%;
-  height: 80px;
+  height: 100px;
   background-color: var(--white);
   font-size: var(--font-size-subtitle);
   font-weight: var(--font-weight-semibold);
