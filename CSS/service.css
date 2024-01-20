@@ -3,15 +3,45 @@
 @import url("nav-footer.css");
 .card-group {
   width: 90%;
-  margin: 80px auto;
+  margin: auto;
+  padding-block: 80px;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 16px;
+  gap: 24px;
 }
-.card-group .card {
+.card-group .card-link {
+  display: inline-block;
+}
+.card-group .card-link:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+.card-group .card-link .card {
   width: 100%;
 }
-.card-group .card img {
+.card-group .card-link .card img {
   width: 100%;
   border-radius: 16px;
+  margin-bottom: 24px;
+}
+.card-group .card-link .card .card-info {
+  text-align: center;
+}
+.card-group .card-link .card .card-info .card-title {
+  width: 80%;
+  margin: auto;
+  padding: 4px 20px;
+  border-radius: 50px;
+  color: var(--sup-one);
+  background-color: var(--secondary-color);
+  margin-bottom: 24px;
+  font-size: var(--font-size-subtitle);
+  font-weight: var(--font-weight-semibold);
+  letter-spacing: 4px;
+}
+.card-group .card-link .card .card-info .card-content {
+  color: var(--secondary-color);
+  font-size: var(--font-size-describe);
+  letter-spacing: 4px;
+  font-weight: var(--font-weight-medium);
 }/*# sourceMappingURL=service.css.map */

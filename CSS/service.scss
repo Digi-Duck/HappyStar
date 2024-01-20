@@ -2,17 +2,48 @@
 @import url("https://fonts.googleapis.com/css2?family=Italianno&family=Noto+Sans+JP:wght@300;500;700;900&display=swap");
 @import url("nav-footer.css");
 
-.card-group{
-    width: 90%;
-    margin: 80px auto;
-    display: grid;
-    grid-template-columns: repeat(4,1fr);
-    gap: 16px;
-    .card{
-        width: 100%;;
-        img{
-            width: 100%;
-            border-radius: 16px;
-        }
+.card-group {
+  width: 90%;
+  margin: auto;
+  padding-block: 80px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+  .card-link {
+    display: inline-block;
+    &:hover {
+      cursor: pointer;
+      opacity: 0.8;
     }
+    .card {
+      width: 100%;
+      img {
+        width: 100%;
+        border-radius: 16px;
+        margin-bottom: 24px;
+      }
+      .card-info{
+        text-align: center;
+        .card-title{
+            width: 80%;
+            margin: auto;
+            padding: 4px 20px;
+            border-radius: 50px;
+            color: var(--sup-one);
+            background-color: var(--secondary-color);
+            margin-bottom: 24px;
+            font-size: var(--font-size-subtitle);
+            font-weight: var(--font-weight-semibold);
+            letter-spacing: 4px;
+        }
+        .card-content{
+            color: var(--secondary-color);
+            font-size: var(--font-size-describe);
+            letter-spacing: 4px;
+            font-weight: var(--font-weight-medium);
+            
+        }
+      }
+    }
+  }
 }
