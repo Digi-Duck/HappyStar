@@ -52,7 +52,7 @@ body .main-container .banner img {
   width: 100%;
 }
 body .goTop {
-  position: absolute;
+  position: fixed;
   right: 50px;
   bottom: 50px;
   display: flex;
