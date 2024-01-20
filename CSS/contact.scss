@@ -28,6 +28,7 @@
         width: 100%;
 
         .store {
+
             .store-info {
                 display: flex;
                 padding-block: 80px;
@@ -40,7 +41,7 @@
                     height: 456px;
                     padding-block: 36px 36px;
                     border-radius: 0 16px 16px 0;
-                    position: relative;
+                    
 
 
                     .test-detail {
@@ -54,6 +55,7 @@
                         display: flex;
                         justify-content: center;
                         align-items: center;
+
 
                         .test {
                             color: var(--secondary-color);
@@ -81,6 +83,74 @@
                             .bx {
                                 margin-right: 8px;
                             }
+
+
+                        }
+                    }
+
+                }
+            }
+        }
+
+        .store-two {
+
+            .store-info {
+                display: flex;
+                padding-block: 80px;
+                margin: auto;
+                width: 1216px;
+
+                .store-detail {
+                    background-color: var(--sup-one);
+                    width: 608px;
+                    height: 456px;
+                    padding-block: 36px 36px;
+                    border-radius: 16px 0px 0px 16px;
+                    padding-left: 40px;
+
+
+                    .test-detail {
+                        width: 572px;
+                        height: 384px;
+                        border-style: solid;
+                        border-width: 4px 0 4px 4px;
+                        border-radius: 16px;
+                        border-image: linear-gradient(to left, rgba(255, 0, 0, 0), var(--first-color));
+                        border-image-slice: 1;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        
+
+
+                        .test {
+                            color: var(--secondary-color);
+
+                            .Store-address {
+                                font-size: var(--font-size-title);
+                            }
+
+                            .small-test:not(:last-child) {
+                                letter-spacing: 5px;
+
+                            }
+
+                            .small-test {
+
+                                font-size: var(--font-size-subtitle);
+                            }
+
+                            .test-content:not(:last-child) {
+                                margin-bottom: 16px;
+                            }
+
+                            ;
+
+                            .bx {
+                                margin-right: 8px;
+                            }
+
+
                         }
                     }
 
