@@ -256,7 +256,7 @@
                     font-size: var(--font-size-subtitle);
                     color: var(--first-color);
                     font-weight: bolder;
-                    box-shadow: 2px 2px 2px black
+                    box-shadow: 2px 4px 3px 2px var(--secondary-color)
                 }
 
                 button:hover {
