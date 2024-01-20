@@ -50,7 +50,7 @@ body {
     }
   }
   .goTop {
-    position: absolute;
+    position: fixed;
     right: 50px;
     bottom: 50px;
     display: flex;
@@ -85,6 +85,7 @@ body {
 
 //  Navbar //
 .navbar {
+  
   position: sticky;
   top: 0;
   right: 0;

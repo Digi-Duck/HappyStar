@@ -198,6 +198,7 @@
   font-size: var(--font-size-subtitle);
   color: var(--first-color);
   font-weight: bolder;
+  box-shadow: 2px 2px 2px black;
 }
 .main-container .contact-form-all .contact-form .submit button:hover {
   background-color: var(--first-color);
