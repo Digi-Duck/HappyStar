@@ -31,17 +31,41 @@
   width: 1216px;
 }
 .main-container .main-content .store .store-info .store-detail {
-  background-color: var(--sup-two);
+  background-color: var(--sup-one);
   width: 608px;
   height: 456px;
-  padding-block: 36px;
+  padding-block: 36px 36px;
   border-radius: 0 16px 16px 0;
+  position: relative;
 }
 .main-container .main-content .store .store-info .store-detail .test-detail {
   width: 572px;
   height: 384px;
   border-style: solid;
   border-width: 4px 4px 4px 0;
-  border-color: var(--first-color);
-  border-radius: 0 16px 16px 0;
+  border-radius: 16px;
+  -o-border-image: linear-gradient(to right, rgba(255, 0, 0, 0), var(--first-color));
+     border-image: linear-gradient(to right, rgba(255, 0, 0, 0), var(--first-color));
+  border-image-slice: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main-container .main-content .store .store-info .store-detail .test-detail .test {
+  color: var(--secondary-color);
+}
+.main-container .main-content .store .store-info .store-detail .test-detail .test .Store-address {
+  font-size: var(--font-size-title);
+}
+.main-container .main-content .store .store-info .store-detail .test-detail .test .small-test:not(:last-child) {
+  letter-spacing: 5px;
+}
+.main-container .main-content .store .store-info .store-detail .test-detail .test .small-test {
+  font-size: var(--font-size-subtitle);
+}
+.main-container .main-content .store .store-info .store-detail .test-detail .test .test-content:not(:last-child) {
+  margin-bottom: 16px;
+}
+.main-container .main-content .store .store-info .store-detail .test-detail .test .bx {
+  margin-right: 8px;
 }/*# sourceMappingURL=contact.css.map */
