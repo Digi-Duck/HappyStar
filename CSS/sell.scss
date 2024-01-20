@@ -2,3 +2,57 @@
 @import url("https://fonts.googleapis.com/css2?family=Italianno&family=Noto+Sans+JP:wght@300;500;700;900&display=swap");
 @import url("nav-footer.css");
 
+<<<<<<< HEAD
+=======
+:root {
+    --main-font: "Noto Serif TC", serif;
+    --main-color: #ffe2d7;
+    --first-color: #a74444;
+    --secondary-color: #3b6580;
+    --sup-one: #faf8ef;
+    --sup-two: #f0e6bc;
+    --white: #ffffff;
+    --font-size-title: 48px;
+    --font-size-sec-title: 32px;
+    --font-size-subtitle: 24px;
+    --font-size-describe: 20px;
+    --font-weight-medium: 500;
+    --font-weight-semibold: 600;
+    --font-weight-bold: 700;
+}
+
+.main {
+    background-color: var(--main-color);
+}
+.main-container {
+    width: 100dvw;
+    margin-bottom: 80px;
+}
+
+.main-content {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    margin: 102px 80px;
+
+    div{
+        width: calc((1699px - 32px) / 3);
+
+        h1 {
+        
+            background-color:#3b6580;
+            color:#f0e6bc;
+            display: inline-block;
+            padding:0 20px;
+            transform: translateX(100%);
+            border-radius: 50px;
+        }
+
+        p {
+            text-align: center;
+            color: #3b6580;
+        }
+    }
+}
+>>>>>>> d9d65cafc01c39019203d0bd2f90b45794a44df9
