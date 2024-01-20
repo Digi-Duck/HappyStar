@@ -29,7 +29,7 @@
 
 .main-container {
     background-color: var(--main-color);
-    
+
 
     .main-content {
         width: 100%;
@@ -223,7 +223,7 @@
                     border-radius: 8px;
                     padding-left: 35px;
                     opacity: 0.5;
-                    font-size:var(--font-size-sec-title);
+                    font-size: var(--font-size-sec-title);
                     // border-color: var(--first-color);
                 }
 
@@ -239,13 +239,14 @@
                 border-radius: 8px;
                 opacity: 0.5;
             }
-            .submit{
+
+            .submit {
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                
-                
-                button{
+
+
+                button {
                     width: 300px;
                     height: 60px;
                     border-radius: 50px;
@@ -257,7 +258,8 @@
                     font-weight: bolder;
                     box-shadow: 2px 2px 2px black
                 }
-                button:hover{
+
+                button:hover {
                     background-color: var(--first-color);
                     color: var(--font-size-subtitle);
                 }
