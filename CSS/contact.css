@@ -157,7 +157,6 @@
 .main-container .contact-form-all {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 128px;
 }
 .main-container .contact-form-all .contact-form .contact-lable {
   width: 982px;
@@ -172,6 +171,29 @@
   border-radius: 8px;
   padding-left: 35px;
   font-size: --font-size-sec-title;
+  border-color: var(--first-color);
+}
+.main-container .contact-form-all .contact-form .Message-area {
+  width: 982px;
+  height: 368px;
+  overflow-x: visible;
+  overflow-y: visible;
+  border-color: var(--first-color);
+  margin-bottom: 24px;
+  border-radius: 8px;
+}
+.main-container .contact-form-all .contact-form .submit {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main-container .contact-form-all .contact-form .submit button {
+  width: 300px;
+  height: 60px;
+  border-radius: 50px;
+  border-color: var(--first-color);
+  background-color: var(--main-color);
+  cursor: pointer;
 }
 .main-container .contact-form-all .contact-form .contact-icon {
   width: 250px;
