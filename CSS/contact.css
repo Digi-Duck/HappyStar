@@ -223,13 +223,13 @@
   width: 300px;
   height: 60px;
   border-radius: 50px;
-  border-color: var(--first-color);
+  border: 2px solid var(--first-color);
   background-color: var(--main-color);
   cursor: pointer;
   font-size: var(--font-size-subtitle);
   color: var(--first-color);
   font-weight: bolder;
-  box-shadow: 0 0 16px rgba(209, 209, 209, 0.7333333333);
+  box-shadow: 0 0 16px rgba(209, 209, 209, 0.8);
   font-family: var(--main-font);
 }
 .main-container .contact-form-all .contact-form .submit button:hover {

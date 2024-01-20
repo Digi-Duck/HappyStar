@@ -1,0 +1,39 @@
+.card-group {
+  width: 90%;
+  margin: auto;
+  padding-block: 80px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 48px;
+}
+.card-group .card {
+  width: 100%;
+}
+.card-group .card img {
+  width: 100%;
+  aspect-ratio: 4/3;
+  border-radius: 16px;
+  margin-bottom: 24px;
+}
+.card-group .card .card-info {
+  text-align: center;
+}
+.card-group .card .card-info .card-title {
+  width: 80%;
+  margin: auto;
+  padding: 4px 20px;
+  border-radius: 50px;
+  color: var(--sup-one);
+  background-color: var(--secondary-color);
+  margin-bottom: 24px;
+  font-size: var(--font-size-subtitle);
+  font-weight: var(--font-weight-semibold);
+  letter-spacing: 4px;
+}
+.card-group .card .card-info .card-content {
+  color: var(--secondary-color);
+  font-size: var(--font-size-describe);
+  letter-spacing: 4px;
+  font-weight: var(--font-weight-medium);
+  padding-inline: 8px;
+}/*# sourceMappingURL=card.css.map */

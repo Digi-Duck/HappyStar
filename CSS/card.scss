@@ -1,19 +1,10 @@
-@import url("https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@200;300;400;500;600;700;900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Italianno&family=Noto+Sans+JP:wght@300;500;700;900&display=swap");
-@import url("nav-footer.css");
 .card-group {
     width: 90%;
     margin: auto;
     padding-block: 80px;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 28px;
-    .card-link {
-      display: inline-block;
-      &:hover {
-        cursor: pointer;
-        opacity: 0.8;
-      }
+    grid-template-columns: repeat(3, 1fr);
+    gap: 48px;
       .card {
         width: 100%;
         img {
@@ -46,5 +37,3 @@
         }
       }
     }
-  }
-  

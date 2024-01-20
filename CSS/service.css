@@ -7,7 +7,7 @@
   padding-block: 80px;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 24px;
+  gap: 28px;
 }
 .card-group .card-link {
   display: inline-block;
@@ -21,6 +21,7 @@
 }
 .card-group .card-link .card img {
   width: 100%;
+  aspect-ratio: 4/3;
   border-radius: 16px;
   margin-bottom: 24px;
 }
@@ -44,4 +45,5 @@
   font-size: var(--font-size-describe);
   letter-spacing: 4px;
   font-weight: var(--font-weight-medium);
+  padding-inline: 8px;
 }/*# sourceMappingURL=service.css.map */
