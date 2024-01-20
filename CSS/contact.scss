@@ -162,7 +162,8 @@
         height: 945px;
         margin: auto;
 
-        background-color:var(--sup-one);
+        background-color: var(--sup-one);
+
         .title {
             width: 565px;
             height: 160px;
@@ -187,14 +188,38 @@
             font-family: "Italianno", cursive;
             font-size: 128px;
             font-weight: 400;
-            
+
         }
-        p{
+
+        p {
             font-size: --font-size-title;
             position: absolute;
             bottom: 10px;
             left: 165px;
         }
     }
+
+    .contact-form-all {
+        display: flex;
+        justify-content:space-between;
+        .contact-form {
+
+
+            .contact-icon {
+                display: flex;
+                flex-direction: column;
+
+                img {
+                    width: 250px;
+                    height: 250px;
+                }
+
+                .line {
+                    margin-bottom: 72px;
+                }
+            }
+        }
+    }
+
 
 }

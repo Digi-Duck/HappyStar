@@ -148,4 +148,19 @@
   position: absolute;
   bottom: 10px;
   left: 165px;
+}
+.main-container .contact-form-all {
+  display: flex;
+  justify-content: space-between;
+}
+.main-container .contact-form-all .contact-form .contact-icon {
+  display: flex;
+  flex-direction: column;
+}
+.main-container .contact-form-all .contact-form .contact-icon img {
+  width: 250px;
+  height: 250px;
+}
+.main-container .contact-form-all .contact-form .contact-icon .line {
+  margin-bottom: 72px;
 }/*# sourceMappingURL=contact.css.map */
