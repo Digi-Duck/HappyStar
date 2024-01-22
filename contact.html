@@ -50,7 +50,7 @@
         </div>
         <div class="banner-768">
             <img src="./Image/banner-768/about.jpg" alt="">
-            <div class="title" >
+            <div class="title">
                 <p>Contact Us</p>
                 <span>聯絡我們</span>
             </div>
@@ -62,11 +62,13 @@
                     <div class="store-detail">
                         <div class="test-detail">
                             <div class="test">
-                                <p class="test-content Store-address">台北門市</p>
-                                <p class="small-test test-content"><i class='bx bxs-map'></i>新北市新莊區思源路375號</p>
-                                <p class="small-test test-content"><i class='bx bxs-phone'></i>02-89919938</p>
-                                <p class="small-test test-content"><i
-                                        class='bx bxs-envelope'></i>happy0918909687@yahoo.com.tw</p>
+                                <p class="test-content Store-address"><span class="test-animation-one">台北門市</span></p>
+                                <p class="small-test test-content"><i class='bx bxs-map'></i><span
+                                        class="test-animation-one">新北市新莊區思源路375號</span></p>
+                                <p class="small-test test-content"><i class='bx bxs-phone'></i><span
+                                        class="test-animation-one">02-89919938</span></p>
+                                <p class="small-test test-content"><i class='bx bxs-envelope'></i><span
+                                        class="test-animation-one">happy0918909687@yahoo.com.tw</span></p>
                             </div>
                         </div>
                     </div>
@@ -83,11 +85,13 @@
                     <div class="store-detail">
                         <div class="test-detail ">
                             <div class="test">
-                                <p class="test-content Store-address">台中門市</p>
-                                <p class="small-test test-content"><i class='bx bxs-map'></i>台中市北區中清路一段489號</p>
-                                <p class="small-test test-content"><i class='bx bxs-phone'></i>04-22981838</p>
-                                <p class="small-test test-content"><i
-                                        class='bx bxs-envelope'></i>happy0918909687@yahoo.com.tw</p>
+                                <p class="test-content Store-address"><span class="test-animation">台中門市</span></p>
+                                <p class="small-test test-content"><i class='bx bxs-map'></i><span
+                                        class="test-animation">台中市北區中清路一段489號</span></p>
+                                <p class="small-test test-content"><i class='bx bxs-phone'></i><span
+                                        class="test-animation">04-22981838</span></p>
+                                <p class="small-test test-content"><i class='bx bxs-envelope'></i><span
+                                        class="test-animation">happy0918909687@yahoo.com.tw</span></p>
                             </div>
                         </div>
                     </div>
@@ -101,11 +105,11 @@
                 </div>
             </div>
             <div class="contactus">
-                <div class="title" data-aos="flip-left"  data-aos-duration="800">
+                <div class="title" data-aos="flip-left" data-aos-duration="800">
                     <p>Contact Us</p>
                     <span>關於我們</span>
                 </div>
-                
+
                 <div class="contact-form-all">
                     <form class="contact-form">
                         <div class="contact-lable">
@@ -133,7 +137,7 @@
                 </div>
             </div>
         </div>
-    </div>
+        </div>
 
     </main>
     <!-- Footer -->
@@ -174,11 +178,55 @@
     </footer>
 
     <!-- AOS -->
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-          AOS.init();
-    </script>
 
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <script>
+        AOS.init();
+
+
+        // animation.js
+
+        // 台北門市
+        const textWrapperOne = document.querySelectorAll('.test-animation-one');
+        // console.log(textWrapperOne);
+        textWrapperOne.forEach((item) => {
+            item.innerHTML = item.textContent.replace(/\S/g, "<span class='letterOne'>$&</span>");
+        });
+        anime.timeline({ loop: true })
+            .add({
+                targets: '.letterOne',
+                opacity: [0, 1],
+                easing: "easeInOutQuad",
+                duration: 1300,
+                delay: (el, i) => 100 * (i + 1),
+                
+            })
+            
+
+
+
+        // 台中門市
+        const textWrapper = document.querySelectorAll('.test-animation');
+        // console.log(textWrapper);
+        textWrapper.forEach((item) => {
+            item.innerHTML = item.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+        });
+        // textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");    
+
+
+        anime.timeline({ loop: true })
+            .add({
+                targets: ' .letter',
+                opacity: [0, 1],
+                easing: "easeInOutQuad",
+                duration: 2250,
+                delay: (el, i) => 150 * (i + 1)
+            })
+
+
+    </script>
 
 </body>
 
