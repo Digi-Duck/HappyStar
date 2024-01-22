@@ -266,7 +266,7 @@
   font-size: var(--font-size-subtitle);
   color: var(--first-color);
   font-weight: bolder;
-  box-shadow: 0 0 16px rgba(209, 209, 209, 0.8);
+  box-shadow: 0 0px 4px hsla(0, 42%, 46%, 0.75);
   font-family: var(--main-font);
 }
 .main-container .contact-form-all .contact-form .submit button:hover {
