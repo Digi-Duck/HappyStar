@@ -11,6 +11,9 @@
     <link rel="stylesheet" href="./CSS/index-swiper.css">
     <!-- fontawesome -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <!-- AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
 </head>
 
 <body>
@@ -47,7 +50,7 @@
         </div>
         <div class="banner-768">
             <img src="./Image/banner-768/about.jpg" alt="">
-            <div class="title">
+            <div class="title" >
                 <p>Contact Us</p>
                 <span>聯絡我們</span>
             </div>
@@ -98,10 +101,11 @@
                 </div>
             </div>
             <div class="contactus">
-                <div class="title">
-                    <span>Contact Us</span>
-                    <p>聯絡我們</p>
+                <div class="title" data-aos="flip-left"  data-aos-duration="800">
+                    <p>Contact Us</p>
+                    <span>關於我們</span>
                 </div>
+                
                 <div class="contact-form-all">
                     <form class="contact-form">
                         <div class="contact-lable">
@@ -129,7 +133,7 @@
                 </div>
             </div>
         </div>
-        </div>
+    </div>
 
     </main>
     <!-- Footer -->
@@ -168,6 +172,12 @@
             </div>
         </div>
     </footer>
+
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+          AOS.init();
+    </script>
 
 
 </body>
