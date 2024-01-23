@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="./CSS/truss.css">
     <!-- fontawesome -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <!-- AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 
 <body>
@@ -39,75 +41,83 @@
             <li class="nav-item"><a href="http://www.kingflower.com.tw/Default.asp" target="_blank">網路商城</a></li>
         </ul>
     </nav>
-        <!-- main -->
-        <main class="main-container">
-            <div class="banner">
-                <img src="./Image/banner/truss.jpg" alt="會場佈置&活動企劃">
+    <!-- main -->
+    <main class="main-container">
+        <div class="banner">
+            <img src="./Image/banner/truss.jpg" alt="會場佈置&活動企劃">
+        </div>
+        <div class="banner-768">
+            <img src="./Image/banner-768/truss.jpg" alt="">
+            <div class="title" data-aos="flip-left" data-aos-duration="600">
+                <p>Canopy&Stage</p>
+                <span>帳篷/舞台/Truss</span>
             </div>
-            <div class="banner-768">
-                <img src="./Image/banner-768/truss.jpg" alt="">
-                <div class="title">
-                    <p>Canopy&Stage</p>
-                    <span>帳篷/舞台/Truss</span>
-                </div>
-            </div>
-            <div class="card-group">
-                <div class="card">
-                    <img src="./Image/photo/truss/01.jpg" alt="">
-                    <div class="card-info">
-                        <div class="card-title">帳篷出租</div>
-                        <div class="card-content">本公司提供各式活動帳篷，適用運動會、校慶、園遊會、公司親子日等等</div>
-                    </div>
-                </div>
-                <div class="card">
-                    <img src="./Image/photo/truss/02.jpg" alt="">
-                    <div class="card-info">
-                        <div class="card-title">舞台出租</div>
-                        <div class="card-content">各機關團體好評推薦！舞台工程周邊規劃施工服務豐富實績肯定</div>
-                    </div>
-                </div>
-                <div class="card">
-                    <img src="./Image/photo/truss/03.jpg" alt="">
-                    <div class="card-info">
-                        <div class="card-title">Truss結構體</div>
-                        <div class="card-content">活動組合式TRUSS可運用在多種場合，可設計舞台背板框架、各式燈光架、活動性佳，也可依照場地調整規格<br><br>目前商品：10CM、15CM、25CM、30CM直式TRUSS以及配件</div>
-                    </div>
+        </div>
+        <div class="card-group">
+            <div class="card">
+                <img src="./Image/photo/truss/01.jpg" data-aos="zoom-out" data-aos-duration="800" data-aos-delay="250"
+                    data-aos-anchor-placement="top-bottom" alt="">
+                <div class="card-info" data-aos="zoom-out" data-aos-duration="800" data-aos-delay="300"
+                    data-aos-anchor-placement="center-bottom">
+                    <div class="card-title">帳篷出租</div>
+                    <div class="card-content">本公司提供各式活動帳篷，適用運動會、校慶、園遊會、公司親子日等等</div>
                 </div>
             </div>
-            <div class="contactus">
-                <div class="title">
-                    <span>Contact Us</span>
-                    <p>聯絡我們</p>
+            <div class="card">
+                <img src="./Image/photo/truss/02.jpg" data-aos="zoom-out" data-aos-duration="800" data-aos-delay="400"
+                    data-aos-anchor-placement="top-bottom" alt="">
+                <div class="card-info" data-aos="zoom-out" data-aos-duration="800" data-aos-delay="450"
+                    data-aos-anchor-placement="center-bottom">
+                    <div class="card-title">舞台出租</div>
+                    <div class="card-content">各機關團體好評推薦！舞台工程周邊規劃施工服務豐富實績肯定</div>
                 </div>
-                <div class="contact-form-all">
-                    <form class="contact-form">
-                        <div class="contact-lable">
-                            <input type="text" placeholder="姓名">
-                            <input type="tel" placeholder="連絡電話">
-                        </div>
-                        <div class="contact-lable">
-                            <input type="email" placeholder="電子郵件">
-                            <input type="text" placeholder="LineID">
-                        </div>
-                        <textarea type="text" class="Message-area"></textarea>
-                        <div class="submit">
-                            <button type="reset" style="margin-right: 16px;">清除重填</button>
-                            <button type="submit">確認送出</button>
-                        </div>
-                    </form>
-                    <div class="contact-icon">
-                        <a href="https://lin.ee/a9WJYir">
-                            <div class="line-link">
-                                <img src="./Image/photo/contact/Frame 138.png" alt="">
-                                <img src="./Image/photo/contact/M_941hkkpb_GW 1.png" alt="">
-                            </div>
-                        </a>
+            </div>
+            <div class="card">
+                <img src="./Image/photo/truss/03.jpg" data-aos="zoom-out" data-aos-duration="800" data-aos-delay="550"
+                    data-aos-anchor-placement="top-bottom" alt="">
+                <div class="card-info" data-aos="zoom-out" data-aos-duration="800" data-aos-delay="600"
+                    data-aos-anchor-placement="center-bottom">
+                    <div class="card-title">Truss結構體</div>
+                    <div class="card-content">
+                        活動組合式TRUSS可運用在多種場合，可設計舞台背板框架、各式燈光架、活動性佳，也可依照場地調整規格<br><br>目前商品：10CM、15CM、25CM、30CM直式TRUSS以及配件
                     </div>
                 </div>
             </div>
         </div>
+        <div class="contactus">
+            <div class="title" data-aos="flip-left" data-aos-duration="800" data-aos-delay="1000">
+                <span>Contact Us</span>
+                <p>聯絡我們</p>
+            </div>
+            <div class="contact-form-all">
+                <form class="contact-form">
+                    <div class="contact-lable">
+                        <input type="text" placeholder="姓名">
+                        <input type="tel" placeholder="連絡電話">
+                    </div>
+                    <div class="contact-lable">
+                        <input type="email" placeholder="電子郵件">
+                        <input type="text" placeholder="LineID">
+                    </div>
+                    <textarea type="text" class="Message-area"></textarea>
+                    <div class="submit">
+                        <button type="reset" style="margin-right: 16px;">清除重填</button>
+                        <button type="submit">確認送出</button>
+                    </div>
+                </form>
+                <div class="contact-icon">
+                    <a href="https://lin.ee/a9WJYir">
+                        <div class="line-link">
+                            <img src="./Image/photo/contact/Frame 138.png" alt="">
+                            <img src="./Image/photo/contact/M_941hkkpb_GW 1.png" alt="">
+                        </div>
+                    </a>
+                </div>
+            </div>
         </div>
-        </main>
+        </div>
+        </div>
+    </main>
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
@@ -144,6 +154,8 @@
             </div>
         </div>
     </footer>
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <!-- lax -->
     <script src="https://cdn.jsdelivr.net/npm/lax.js"></script>
     <!-- swiper -->

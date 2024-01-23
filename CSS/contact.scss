@@ -206,35 +206,67 @@
     width: 100%;
     margin: auto;
     padding: 0 80px 80px;
+
     .title {
-      width: 565px;
-      height: 160px;
-      color: var(--first-color);
-      font-size: var(--font-size-title);
-      font-weight: var(--font-weight-bold);
-      letter-spacing: 15px;
-      margin: auto;
-      margin-bottom: 80px;
       position: relative;
+      text-align: center;
+      margin: 28px 0 80px 0;
+      p {
+        background: linear-gradient(to bottom, #aa0000, #d1d1d1, #ffffff);
+        background: -webkit-linear-gradient(
+          to bottom,
+          #aa0000,
+          #d1d1d1,
+          #ffffff
+        );
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent;
+        font-family: "Italianno", cursive;
+        font-size: 128px;
+        font-weight: 400;
+      }
+      span {
+        width: 100%;
+        font-size: var(--font-size-title);
+        position: absolute;
+        bottom: 10px;
+        left: 50%;
+        transform: translateX(-50%);
+        font-weight: var(--font-weight-bold);
+        letter-spacing: 8px;
+        color: var(--first-color);
+      }
     }
+    // .title {
+    //   width: 565px;
+    //   height: 160px;
+    //   color: var(--first-color);
+    //   font-size: var(--font-size-title);
+    //   font-weight: var(--font-weight-bold);
+    //   letter-spacing: 15px;
+    //   margin: auto;
+    //   margin-bottom: 80px;
+    //   position: relative;
+    // }
 
-    span {
-      background: linear-gradient(to bottom, #aa0000, #d1d1d1, #ffffff);
-      background: -webkit-linear-gradient(to bottom, #aa0000, #d1d1d1, #ffffff);
-      background-clip: text;
-      -webkit-background-clip: text;
-      color: transparent;
-      font-family: "Italianno", cursive;
-      font-size: 128px;
-      font-weight: 400;
-    }
+    // span {
+    //   background: linear-gradient(to bottom, #aa0000, #d1d1d1, #ffffff);
+    //   background: -webkit-linear-gradient(to bottom, #aa0000, #d1d1d1, #ffffff);
+    //   background-clip: text;
+    //   -webkit-background-clip: text;
+    //   color: transparent;
+    //   font-family: "Italianno", cursive;
+    //   font-size: 128px;
+    //   font-weight: 400;
+    // }
 
-    p {
-      font-size: --font-size-title;
-      position: absolute;
-      bottom: 10px;
-      left: 165px;
-    }
+    // p {
+    //   font-size: --font-size-title;
+    //   position: absolute;
+    //   bottom: 10px;
+    //   left: 165px;
+    // }
   }
 
   .contact-form-all {

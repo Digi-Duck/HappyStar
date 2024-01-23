@@ -42,3 +42,5 @@ window.onload = function () {
 // AOS.js 動畫
 
     AOS.init();
+
+    
