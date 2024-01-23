@@ -33,16 +33,16 @@ ul {
 
 body {
   width: 100%;
-  max-width: 1920px;
   height: 100%;
-  margin: auto;
   scroll-behavior: smooth;
+  font-family: var(--main-font);
 }
 body .main-container {
   position: relative;
   width: 100%;
+  max-width: 1920px;
   height: 100%;
-  font-family: var(--main-font);
+  margin: auto;
   background-color: var(--main-color);
 }
 body .main-container .background {
@@ -55,7 +55,7 @@ body .main-container .background img {
   width: 100%;
 }
 body .main-container .goTop {
-  position: absolute;
+  position: fixed;
   right: 50px;
   bottom: 50px;
   display: flex;
@@ -69,6 +69,11 @@ body .main-container .goTop {
   background-color: var(--sup-one);
   box-shadow: 0 0 8px rgba(167, 68, 68, 0.7333333333);
   z-index: 3;
+  opacity: 0;
+  transition: 0.3s ease-in-out;
+}
+body .main-container .goTop.active {
+  opacity: 1;
 }
 body .main-container .goTop i,
 body .main-container .goTop p {
@@ -376,7 +381,6 @@ main .service .container .more {
   box-shadow: 0 0 12px rgba(209, 209, 209, 0.7333333333);
   font-size: var(--font-size-describe);
   font-weight: var(--font-weight-bold);
-  margin-top: 30px;
   text-align: center;
   line-height: 60px;
   letter-spacing: 4px;
@@ -523,10 +527,13 @@ main .more-link .related-img {
   z-index: -2;
 }
 main .more-link .container {
+  width: 100%;
   background-color: var(--sup-one);
   padding: 40px 0;
 }
 main .more-link .container .link {
+  width: 100%;
+  margin: auto;
   display: flex;
   justify-content: center;
   padding: 60px 0;
@@ -538,7 +545,7 @@ main .more-link .container .link a {
   display: inline-block;
 }
 main .more-link .container .link a img {
-  width: 200px;
+  height: 100%;
 }
 
 .footer {
@@ -650,19 +657,58 @@ main .more-link .container .link a img {
 @media (max-width: 880px) {
   .footer .container {
     flex-direction: column;
+    justify-content: center;
+    font-size: 18px;
+    padding: 28px;
   }
   .footer .container .info {
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
   }
   .footer .container .info .content-img {
-    width: 320px;
+    width: 30%;
+    margin-right: 20px;
+    gap: 12px;
+    margin-bottom: 16px;
+  }
+  .footer .container .info .content-img img {
+    height: 40px;
   }
   .footer .container .info .content {
+    width: 100%;
+    font-size: 16px;
     margin-top: 0;
+    justify-content: center;
   }
   .footer .container .info .content li a {
     padding: 0;
+  }
+  .footer .container .store {
+    width: 100%;
+    margin-top: 28px;
+    justify-content: space-evenly;
+  }
+}
+@media (max-width: 570px) {
+  .footer {
+    height: auto;
+  }
+  .footer .container .info {
+    align-items: start;
+  }
+  .footer .container .info .content {
+    display: inline-block;
+    padding-left: 16px;
+    font-size: 18px;
+  }
+  .footer .container .info .content li {
+    padding: 6px 0;
+  }
+  .footer .container .store {
+    flex-direction: column;
+    align-items: start;
+    gap: 16px;
   }
 }/*# sourceMappingURL=style.css.map */
