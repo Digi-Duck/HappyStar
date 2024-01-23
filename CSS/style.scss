@@ -30,6 +30,7 @@ a {
 ul {
   list-style: none;
 }
+
 body {
   width: 100%;
   height: 100%;
@@ -149,7 +150,7 @@ body {
         top: 50px;
         left: 0;
         text-align: center;
-        z-index: 1;
+        z-index: 2;
 
         .list-item {
           &:hover a {
@@ -169,20 +170,61 @@ body {
   }
   .nav-menu {
     display: none;
-    width: 70px;
-    height: 100%;
-    font-size: 48px;
-    color: var(--first-color);
-    line-height: 70px;
-    text-align: center;
+    cursor: pointer;
+    i {
+      width: 70px;
+      height: 100%;
+      font-size: 48px;
+      color: var(--first-color);
+      line-height: 70px;
+      text-align: center;
+    }
+    .bx-x {
+      display: none;
+    }
   }
-  .menu-list{
+  .menu-list {
     position: absolute;
     left: 0;
     top: 70px;
     width: 100%;
     height: 100vh;
     background-color: var(--main-color);
+    z-index: 1;
+    opacity: 0;
+    overflow-y: scroll;
+    transform-origin: top right;
+    transform: scale(0);
+    transition: 0.3s linear;
+    &.active {
+      transform: scale(1);
+      opacity: 1;
+    }
+    &::-webkit-scrollbar{
+      display: none;
+    }
+    .menu {
+      padding: 0px 20px;
+      .nav-item {
+        i {
+          margin-right: 4px;
+        }
+        &:last-child a {
+          border-bottom: none;
+        }
+        .nav-list {
+          font-size: var(--font-size-describe);
+          padding-left: 12px;
+        }
+        a {
+          display: inline-block;
+          width: 100%;
+          padding: 16px 20px;
+          color: var(--secondary-color);
+          border-bottom: 1px dotted var(--first-color);
+        }
+      }
+    }
   }
 }
 
@@ -764,6 +806,24 @@ main {
   }
 }
 // Navbar Media //
+@media (max-width: 1200px) {
+  .navbar {
+    font-size: 22px;
+    .nav {
+      .service {
+        .navlist {
+          top: 40px;
+        }
+      }
+      .nav-item {
+        a {
+          padding: 16px 8px;
+        }
+      }
+    }
+  }
+}
+
 @media (max-width: 991px) {
   .navbar {
     height: 70px;
@@ -777,6 +837,21 @@ main {
     }
     .nav-menu {
       display: block;
+    }
+  }
+}
+
+@media (max-width: 375px) {
+  .navbar {
+    .menu-list {
+      .menu {
+        .nav-item {
+          font-size: 18px;
+          .nav-list {
+            font-size: 16px;
+          }
+        }
+      }
     }
   }
 }

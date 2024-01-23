@@ -92,10 +92,8 @@ body .goTop:hover i {
 .navbar {
   position: sticky;
   top: 0;
-  right: 0;
-  bottom: 0;
   left: 0;
-  padding: 0 90px;
+  padding: 0 40px;
   width: 100%;
   height: 100px;
   background-color: var(--white);
@@ -151,7 +149,7 @@ body .goTop:hover i {
   top: 50px;
   left: 0;
   text-align: center;
-  z-index: 1;
+  z-index: 2;
 }
 .navbar .nav .service .navlist .list-item:hover a {
   color: var(--secondary-color);
@@ -163,6 +161,62 @@ body .goTop:hover i {
   padding: 18px 36px;
   color: var(--sup-one);
   background-color: var(--first-color);
+}
+.navbar .nav-menu {
+  display: none;
+  cursor: pointer;
+}
+.navbar .nav-menu i {
+  width: 70px;
+  height: 100%;
+  font-size: 48px;
+  color: var(--first-color);
+  line-height: 70px;
+  text-align: center;
+}
+.navbar .nav-menu .bx-x {
+  display: none;
+}
+.navbar .menu-list {
+  position: absolute;
+  left: 0;
+  top: 70px;
+  width: 100%;
+  height: 100vh;
+  background-color: var(--main-color);
+  z-index: 1;
+  opacity: 0;
+  overflow-y: scroll;
+  transform-origin: top right;
+  transform: scale(0);
+  transition: 0.3s linear;
+}
+.navbar .menu-list.active {
+  transform: scale(1);
+  opacity: 1;
+}
+.navbar .menu-list::-webkit-scrollbar {
+  display: none;
+}
+.navbar .menu-list .menu {
+  padding: 0px 20px;
+}
+.navbar .menu-list .menu .nav-item i {
+  margin-right: 4px;
+}
+.navbar .menu-list .menu .nav-item:last-child a {
+  border-bottom: none;
+}
+.navbar .menu-list .menu .nav-item .nav-list {
+  font-size: var(--font-size-describe);
+  padding-left: 12px;
+}
+.navbar .menu-list .menu .nav-item a {
+  display: inline-block;
+  width: 100%;
+  padding: 16px 20px;
+  color: var(--secondary-color);
+  border-bottom: 1px dotted var(--first-color);
 }
 
 .footer {
@@ -224,10 +278,42 @@ body .goTop:hover i {
   margin-right: 4px;
 }
 
-@media (max-width: 1400px) {
+@media (max-width: 1200px) {
   .navbar {
-    padding: 0 40px;
+    font-size: 22px;
   }
+  .navbar .nav .service .navlist {
+    top: 40px;
+  }
+  .navbar .nav .nav-item a {
+    padding: 16px 8px;
+  }
+}
+@media (max-width: 991px) {
+  .navbar {
+    height: 70px;
+    padding: 0 0 0 20px;
+  }
+  .navbar .logo {
+    width: 201px;
+    height: 45px;
+  }
+  .navbar .nav {
+    display: none;
+  }
+  .navbar .nav-menu {
+    display: block;
+  }
+}
+@media (max-width: 375px) {
+  .navbar .menu-list .menu .nav-item {
+    font-size: 18px;
+  }
+  .navbar .menu-list .menu .nav-item .nav-list {
+    font-size: 16px;
+  }
+}
+@media (max-width: 1400px) {
   .footer .container {
     padding: 0 40px;
   }
@@ -257,18 +343,6 @@ body .goTop:hover i {
   }
   .footer .container .store .store-info {
     gap: 0px;
-  }
-}
-@media (max-width: 1100px) {
-  .navbar .logo {
-    width: 201px;
-    height: 45px;
-  }
-  .navbar .nav {
-    gap: 2px;
-  }
-  .navbar .nav .nav-item a {
-    padding: 16px 4px;
   }
 }
 @media (max-width: 880px) {
