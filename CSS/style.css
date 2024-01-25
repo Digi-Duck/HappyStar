@@ -265,47 +265,49 @@ main {
   width: 100%;
 }
 main .about {
-  margin-top: -50px;
+  margin-top: -150px;
   width: 100%;
 }
 main .about .container {
   position: relative;
   width: 100%;
-  height: 1160px;
-}
-main .about .container .about-imgR {
-  position: absolute;
-  right: 5%;
-  bottom: 10%;
-  width: 280px;
+  display: flex;
+  flex-direction: column;
 }
 main .about .container .about-imgOne {
   position: relative;
-  top: -10%;
   left: 100%;
   transform: translateX(-100%);
-  width: 900px;
+  width: 60%;
   aspect-ratio: 4/3;
 }
 main .about .container .about-imgOne img {
   width: 100%;
   height: 100%;
 }
+main .about .container .about-imgTwo {
+  position: relative;
+  width: 33%;
+  aspect-ratio: 4/3;
+  margin-top: -200px;
+}
+main .about .container .about-imgTwo img {
+  width: 100%;
+  height: 100%;
+}
 main .about .container .about-detail {
   position: relative;
-  top: -50%;
   left: 40%;
   transform: translate(-50%);
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   gap: 24px;
-  width: 800px;
-  height: 600px;
-  padding: 64px 128px;
+  width: 40%;
+  padding: 64px;
   background-color: var(--sup-one);
   box-shadow: 0 0 12px rgba(167, 68, 68, 0.4);
   z-index: 1;
+  margin-top: -500px;
 }
 main .about .container .about-detail .about-imgL {
   position: absolute;
@@ -352,15 +354,11 @@ main .about .container .about-detail .more {
 main .about .container .about-detail .more:hover {
   background-color: var(--first-color);
 }
-main .about .container .about-imgTwo {
+main .about .about-imgR {
   position: relative;
-  top: -60%;
-  width: 500px;
-  aspect-ratio: 4/3;
-}
-main .about .container .about-imgTwo img {
-  width: 100%;
-  height: 100%;
+  left: 80%;
+  width: 250px;
+  margin-top: -80px;
 }
 main .service {
   position: relative;
@@ -845,57 +843,30 @@ main .more-link .container .link a img {
     display: none;
   }
 }
-@media (max-width: 1400px) {
-  main .about .container {
-    height: 900px;
-  }
-  main .about .container .about-imgOne {
-    width: 700px;
-  }
+@media (max-width: 1600px) {
   main .about .container .about-detail {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     width: 600px;
     height: 450px;
-    top: -45%;
     padding: 28px 56px;
+    margin-top: -400px;
   }
   main .about .container .about-detail .title {
-    text-align: center;
     font-size: var(--font-size-sec-title);
     font-weight: var(--font-weight-bold);
     letter-spacing: 4px;
   }
   main .about .container .about-detail .title span {
     font-size: 64px;
-  }
-  main .about .container .about-imgTwo {
-    width: 400px;
-  }
-  main .about .container .about-imgR {
-    bottom: 0%;
   }
 }
-@media (max-width: 991px) {
-  main .about .container {
-    height: 900px;
-  }
-  main .about .container .about-imgOne {
-    width: 450px;
+@media (max-width: 1440px) {
+  main .about .about-imgR {
+    width: 180px;
   }
   main .about .container .about-detail {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 500px;
-    height: 375px;
-    top: -45%;
-    padding: 28px 28px;
-    gap: 12px;
+    margin-top: -350px;
   }
   main .about .container .about-detail .title {
-    text-align: center;
     font-size: var(--font-size-sec-title);
     font-weight: var(--font-weight-bold);
     letter-spacing: 4px;
@@ -903,17 +874,150 @@ main .more-link .container .link a img {
   main .about .container .about-detail .title span {
     font-size: 64px;
   }
-  main .about .container .about-detail .more {
-    letter-spacing: 4px;
-    margin-top: 4px;
+}
+@media (max-width: 992px) {
+  main .about {
+    margin-top: -100px;
   }
-  main .about .container .about-detail .more:hover {
-    background-color: var(--first-color);
+  main .about .about-imgR {
+    width: 120px;
+    margin-top: -40px;
+  }
+  main .about .container .about-imgOne {
+    width: 50%;
   }
   main .about .container .about-imgTwo {
-    width: 400px;
+    margin-top: -100px;
   }
-  main .about .container .about-imgR {
-    bottom: 0%;
+  main .about .container .about-detail {
+    width: 50%;
+    height: 350px;
+    padding: 28px;
+    margin-top: -200px;
+    justify-content: space-evenly;
+  }
+  main .about .container .about-detail .title {
+    font-size: var(--font-size-subtitle);
+    font-weight: var(--font-weight-bold);
+    letter-spacing: 4px;
+  }
+  main .about .container .about-detail .title span {
+    font-size: 64px;
+  }
+  main .about .container .about-detail p {
+    color: var(--secondary-color);
+    font-size: var(--font-size-describe);
+    font-weight: var(--font-weight-medium);
+    line-height: 1.3;
+    letter-spacing: 2px;
+  }
+  main .about .container .about-detail .more {
+    width: 150px;
+    height: 45px;
+    line-height: 45px;
+    letter-spacing: 2px;
+  }
+}
+@media (max-width: 768px) {
+  main .about {
+    margin-top: -50px;
+  }
+  main .about .about-imgR {
+    width: 120px;
+    margin-top: -40px;
+  }
+  main .about .container .about-imgOne {
+    width: 70%;
+  }
+  main .about .container .about-imgTwo {
+    display: none;
+  }
+  main .about .container .about-detail {
+    width: 70%;
+    left: 5%;
+    transform: translate(0%);
+  }
+}
+@media (max-width: 610px) {
+  main .about {
+    margin-top: 0px;
+    margin-bottom: 40px;
+  }
+  main .about .about-imgR {
+    display: none;
+  }
+  main .about .container .about-imgOne {
+    width: 90%;
+  }
+  main .about .container .about-detail {
+    margin-top: -300px;
+    padding: 16px;
+    align-items: center;
+  }
+  main .about .container .about-detail p {
+    font-size: 18px;
+  }
+}
+@media (max-width: 440px) {
+  main .about .container .about-imgOne {
+    display: none;
+  }
+  main .about .container .about-imgTwo {
+    display: none;
+  }
+  main .about .container .about-detail {
+    width: 80%;
+    left: 50%;
+    transform: translate(-50%);
+    margin-top: 40px;
+  }
+}
+@media (max-width: 768px) {
+  main .service .container .title {
+    font-size: var(--font-size-sec-title);
+  }
+  main .service .container .title span {
+    font-size: 96px;
+  }
+}
+@media (max-width: 480px) {
+  main .service .container .title {
+    font-size: 20px;
+  }
+  main .service .container .title span {
+    font-size: 68px;
+  }
+}
+@media (max-width: 768px) {
+  main .marquee .title {
+    font-size: var(--font-size-sec-title);
+    margin-bottom: 0;
+  }
+  main .marquee .title span {
+    font-size: 96px;
+  }
+}
+@media (max-width: 480px) {
+  main .marquee .title {
+    font-size: 20px;
+  }
+  main .marquee .title span {
+    font-size: 68px;
+  }
+}
+@media (max-width: 768px) {
+  main .more-link .title {
+    font-size: var(--font-size-sec-title);
+  }
+  main .more-link .title span {
+    font-size: 96px;
+  }
+}
+@media (max-width: 480px) {
+  main .more-link .title {
+    font-size: 20px;
+  }
+  main .more-link .title span {
+    font-size: 68px;
   }
 }/*# sourceMappingURL=style.css.map */
