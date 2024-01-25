@@ -918,9 +918,9 @@ main {
         p {
           letter-spacing: 3px;
           text-align: center;
-        &:last-child {
-          text-align: center;
-        }
+          &:last-child {
+            text-align: center;
+          }
         }
       }
     }
@@ -930,3 +930,83 @@ main {
   }
 }
 // About //
+@media (max-width: 1400px) {
+  main {
+    .about {
+      .container {
+        height: 900px;
+        .about-imgOne {
+          width: 700px;
+        }
+        .about-detail {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          width: 600px;
+          height: 450px;
+          top: -45%;
+          padding: 28px 56px;
+          .title {
+            text-align: center;
+            font-size: var(--font-size-sec-title);
+            font-weight: var(--font-weight-bold);
+            letter-spacing: 4px;
+            span {
+              font-size: 64px;
+            }
+          }
+        }
+        .about-imgTwo {
+         width: 400px;
+        }
+        .about-imgR {
+          bottom: 0%;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 991px) {
+  main {
+    .about {
+      .container {
+        height: 900px;
+        .about-imgOne {
+          width: 450px;
+        }
+        .about-detail {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          width: 500px;
+          height: 375px;
+          top: -45%;
+          padding: 28px 28px;
+          gap: 12px;
+          .title {
+            text-align: center;
+            font-size: var(--font-size-sec-title);
+            font-weight: var(--font-weight-bold);
+            letter-spacing: 4px;
+            span {
+              font-size: 64px;
+            }
+          }
+          .more {
+            letter-spacing: 4px;
+            margin-top: 4px;
+            &:hover {
+              background-color: var(--first-color);
+            }
+          }
+        }
+        .about-imgTwo {
+         width: 400px;
+        }
+        .about-imgR {
+          bottom: 0%;
+        }
+      }
+    }
+  }
+}

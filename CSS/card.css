@@ -1,3 +1,9 @@
+.main-container .banner {
+  width: 100%;
+}
+.main-container .banner img {
+  width: 100%;
+}
 .main-container .banner-768 {
   display: none;
   width: 100%;
