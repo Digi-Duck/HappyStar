@@ -844,4 +844,76 @@ main .more-link .container .link a img {
   header .news {
     display: none;
   }
+}
+@media (max-width: 1400px) {
+  main .about .container {
+    height: 900px;
+  }
+  main .about .container .about-imgOne {
+    width: 700px;
+  }
+  main .about .container .about-detail {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 600px;
+    height: 450px;
+    top: -45%;
+    padding: 28px 56px;
+  }
+  main .about .container .about-detail .title {
+    text-align: center;
+    font-size: var(--font-size-sec-title);
+    font-weight: var(--font-weight-bold);
+    letter-spacing: 4px;
+  }
+  main .about .container .about-detail .title span {
+    font-size: 64px;
+  }
+  main .about .container .about-imgTwo {
+    width: 400px;
+  }
+  main .about .container .about-imgR {
+    bottom: 0%;
+  }
+}
+@media (max-width: 991px) {
+  main .about .container {
+    height: 900px;
+  }
+  main .about .container .about-imgOne {
+    width: 450px;
+  }
+  main .about .container .about-detail {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 500px;
+    height: 375px;
+    top: -45%;
+    padding: 28px 28px;
+    gap: 12px;
+  }
+  main .about .container .about-detail .title {
+    text-align: center;
+    font-size: var(--font-size-sec-title);
+    font-weight: var(--font-weight-bold);
+    letter-spacing: 4px;
+  }
+  main .about .container .about-detail .title span {
+    font-size: 64px;
+  }
+  main .about .container .about-detail .more {
+    letter-spacing: 4px;
+    margin-top: 4px;
+  }
+  main .about .container .about-detail .more:hover {
+    background-color: var(--first-color);
+  }
+  main .about .container .about-imgTwo {
+    width: 400px;
+  }
+  main .about .container .about-imgR {
+    bottom: 0%;
+  }
 }/*# sourceMappingURL=style.css.map */

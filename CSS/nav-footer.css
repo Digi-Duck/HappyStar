@@ -45,6 +45,12 @@ body .main-container {
   height: 100%;
   background-color: var(--main-color);
 }
+body .main-container .banner {
+  width: 100%;
+}
+body .main-container .banner img {
+  width: 100%;
+}
 body .goTop {
   position: fixed;
   right: 50px;
