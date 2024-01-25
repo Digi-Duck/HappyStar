@@ -49,27 +49,26 @@ let openBtn = document.querySelector('.bx-menu');
 let closeBtn = document.querySelector('.bx-x');
 let menuList = document.querySelector('.menu-list');
 
-if(openBtn && closeBtn){
-  openBtn.addEventListener('click',()=>{
-    openBtn.style.display=('none');
-    closeBtn.style.display=('block');
+if (openBtn && closeBtn) {
+  openBtn.addEventListener('click', () => {
+    openBtn.style.display = ('none');
+    closeBtn.style.display = ('block');
     menuList.classList.add('active');
   });
-  closeBtn.addEventListener('click',()=>{
-    openBtn.style.display=('block');
-    closeBtn.style.display=('none');
+  closeBtn.addEventListener('click', () => {
+    openBtn.style.display = ('block');
+    closeBtn.style.display = ('none');
     menuList.classList.remove('active');
   });
 }
 menuList.style.height = `${window.innerHeight - 70}px`;
-window.addEventListener('resize',()=>{
+window.addEventListener('resize', () => {
   menuList.style.height = `${window.innerHeight - 70}px`;
 })
 
 // Lax.js 動畫
 window.onload = function () {
   lax.init();
-
   lax.addDriver("scrollY", function () {
     return window.scrollY;
   });
