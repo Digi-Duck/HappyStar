@@ -322,8 +322,8 @@ main .about .container .about-detail .title {
   letter-spacing: 8px;
 }
 main .about .container .about-detail .title span {
-  background: linear-gradient(to bottom, #3b6580, #d1d1d1, #ffffff);
-  background: -webkit-linear-gradient(to bottom, #3b6580, #d1d1d1, #ffffff);
+  background: linear-gradient(to bottom, #aa0000 20%, #d1d1d1, #ffffff);
+  background: -webkit-linear-gradient(to bottom, #aa0000 20%, #d1d1d1, #ffffff);
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
@@ -396,6 +396,7 @@ main .service .container::after {
   background: url(../Image/BG/service-bg-bottom.png) no-repeat;
   background-size: cover;
   background-position: center;
+  pointer-events: none;
 }
 main .service .container .service-line {
   position: absolute;
@@ -406,23 +407,33 @@ main .service .container .service-line {
   z-index: 1;
 }
 main .service .container .title {
-  color: var(--first-color);
-  font-size: var(--font-size-title);
-  font-weight: var(--font-weight-bold);
-  letter-spacing: 8px;
-  margin-top: -80px;
+  position: relative;
+  text-align: center;
+  margin-bottom: 28px;
 }
-main .service .container .title span {
-  background: linear-gradient(to bottom, #3b6580, #d1d1d1, #ffffff);
-  background: -webkit-linear-gradient(to bottom, #3b6580, #d1d1d1, #ffffff);
+main .service .container .title p {
+  background: linear-gradient(to bottom, #aa0000 20%, #d1d1d1, #ffffff);
+  background: -webkit-linear-gradient(to bottom, #aa0000, #d1d1d1, #ffffff);
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
   font-family: "Italianno", cursive;
   font-size: 128px;
   font-weight: 400;
+  letter-spacing: 16px;
 }
-main .service .container .more {
+main .service .container .title span {
+  width: 100%;
+  font-size: var(--font-size-title);
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-weight: var(--font-weight-bold);
+  letter-spacing: 8px;
+  color: var(--first-color);
+}
+main .service .more {
   display: inline-block;
   width: 200px;
   height: 60px;
@@ -435,10 +446,11 @@ main .service .container .more {
   line-height: 60px;
   letter-spacing: 4px;
 }
-main .service .container .more:hover {
+main .service .more:hover {
   background-color: var(--first-color);
 }
-main .marquee {
+
+.marquee {
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -446,43 +458,51 @@ main .marquee {
   margin-bottom: 40px;
   margin-top: 40px;
 }
-main .marquee .title {
+.marquee .title {
   position: relative;
   text-align: center;
-  color: var(--first-color);
-  font-size: var(--font-size-title);
-  font-weight: var(--font-weight-bold);
-  letter-spacing: 8px;
-  margin-bottom: -60px;
+  margin-bottom: 28px;
 }
-main .marquee .title span {
-  background: linear-gradient(to bottom, #3b6580, #d1d1d1, #ffffff);
-  background: -webkit-linear-gradient(to bottom, #3b6580, #d1d1d1, #ffffff);
+.marquee .title p {
+  background: linear-gradient(to bottom, #aa0000 20%, #d1d1d1, #ffffff);
+  background: -webkit-linear-gradient(to bottom, #aa0000, #d1d1d1, #ffffff);
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
   font-family: "Italianno", cursive;
   font-size: 128px;
   font-weight: 400;
+  letter-spacing: 16px;
 }
-main .marquee .photo-container {
+.marquee .title span {
+  width: 100%;
+  font-size: var(--font-size-title);
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-weight: var(--font-weight-bold);
+  letter-spacing: 8px;
+  color: var(--first-color);
+}
+.marquee .photo-container {
   display: flex;
   flex-direction: column;
   align-items: end;
 }
-main .marquee .photo-container .view {
+.marquee .photo-container .view {
   overflow: hidden;
   width: 90%;
   display: flex;
   flex-direction: column;
   align-items: end;
 }
-main .marquee .photo-container .view:nth-of-type(2) {
+.marquee .photo-container .view:nth-of-type(2) {
   position: relative;
   left: -10%;
   align-items: start;
 }
-main .marquee .photo-container .view:nth-of-type(2) .pic-container {
+.marquee .photo-container .view:nth-of-type(2) .pic-container {
   display: flex;
   flex-flow: row-reverse;
   margin-top: -8%;
@@ -496,19 +516,19 @@ main .marquee .photo-container .view:nth-of-type(2) .pic-container {
     transform: translateX(100%);
   }
 }
-main .marquee .photo-container .view:nth-of-type(2) .pic-container .pic {
+.marquee .photo-container .view:nth-of-type(2) .pic-container .pic {
   flex-basis: 20%;
   flex-shrink: 0;
 }
-main .marquee .photo-container .view:nth-of-type(2) .pic-container .pic img {
+.marquee .photo-container .view:nth-of-type(2) .pic-container .pic img {
   width: 100%;
   height: 100%;
   vertical-align: middle;
 }
-main .marquee .photo-container .view img {
+.marquee .photo-container .view img {
   width: 90%;
 }
-main .marquee .photo-container .view .pic-container {
+.marquee .photo-container .view .pic-container {
   display: flex;
   margin-top: -8%;
   animation: toLeft 20s infinite linear;
@@ -521,16 +541,16 @@ main .marquee .photo-container .view .pic-container {
     transform: translateX(-100%);
   }
 }
-main .marquee .photo-container .view .pic-container .pic {
+.marquee .photo-container .view .pic-container .pic {
   flex-basis: 20%;
   flex-shrink: 0;
 }
-main .marquee .photo-container .view .pic-container .pic img {
+.marquee .photo-container .view .pic-container .pic img {
   width: 100%;
   height: 100%;
   vertical-align: middle;
 }
-main .marquee .more {
+.marquee .more {
   display: inline-block;
   width: 200px;
   height: 60px;
@@ -544,44 +564,55 @@ main .marquee .more {
   line-height: 60px;
   letter-spacing: 4px;
 }
-main .marquee .more:hover {
+.marquee .more:hover {
   background-color: var(--first-color);
 }
-main .more-link {
+
+.more-link {
   position: relative;
   width: 100%;
   padding: 60px 0;
 }
-main .more-link .title {
+.more-link .title {
+  position: relative;
   text-align: center;
-  color: var(--first-color);
-  font-size: var(--font-size-title);
-  font-weight: var(--font-weight-bold);
-  letter-spacing: 8px;
+  margin-bottom: 28px;
 }
-main .more-link .title span {
-  background: linear-gradient(to bottom, #3b6580, #d1d1d1, #ffffff);
-  background: -webkit-linear-gradient(to bottom, #3b6580, #d1d1d1, #ffffff);
+.more-link .title p {
+  background: linear-gradient(to bottom, #aa0000 20%, #d1d1d1, #ffffff);
+  background: -webkit-linear-gradient(to bottom, #aa0000 20%, #d1d1d1, #ffffff);
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
   font-family: "Italianno", cursive;
   font-size: 128px;
   font-weight: 400;
+  letter-spacing: 16px;
 }
-main .more-link .related-img {
+.more-link .title span {
+  width: 100%;
+  font-size: var(--font-size-title);
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-weight: var(--font-weight-bold);
+  letter-spacing: 8px;
+  color: var(--first-color);
+}
+.more-link .related-img {
   position: absolute;
   top: -5%;
   right: 8%;
   width: 270px;
   z-index: -2;
 }
-main .more-link .container {
+.more-link .container {
   width: 100%;
   background-color: var(--sup-one);
   padding: 40px 0;
 }
-main .more-link .container .link {
+.more-link .container .link {
   width: 100%;
   margin: auto;
   display: flex;
@@ -591,10 +622,10 @@ main .more-link .container .link {
   border-top: 1px solid var(--first-color);
   border-bottom: 1px solid var(--first-color);
 }
-main .more-link .container .link a {
+.more-link .container .link a {
   display: inline-block;
 }
-main .more-link .container .link a img {
+.more-link .container .link a img {
   height: 100%;
 }
 
@@ -966,58 +997,88 @@ main .more-link .container .link a img {
     display: none;
   }
   main .about .container .about-detail {
-    width: 80%;
+    width: 98%;
     left: 50%;
     transform: translate(-50%);
     margin-top: 40px;
   }
 }
 @media (max-width: 768px) {
-  main .service .container .title {
-    font-size: var(--font-size-sec-title);
+  main .service .container .title p {
+    font-size: 96px;
   }
   main .service .container .title span {
-    font-size: 96px;
+    font-size: var(--font-size-sec-title);
+  }
+  main .service .more {
+    width: 150px;
+    height: 45px;
+    line-height: 45px;
+    letter-spacing: 2px;
   }
 }
 @media (max-width: 480px) {
-  main .service .container .title {
-    font-size: 20px;
+  main .service .container {
+    padding-block: 128px;
+    gap: 0;
+  }
+  main .service .container .title p {
+    letter-spacing: 8px;
+    font-size: 68px;
   }
   main .service .container .title span {
-    font-size: 68px;
+    font-size: 20px;
   }
 }
 @media (max-width: 768px) {
-  main .marquee .title {
-    font-size: var(--font-size-sec-title);
-    margin-bottom: 0;
+  main .marquee .title p {
+    font-size: 96px;
   }
   main .marquee .title span {
-    font-size: 96px;
+    font-size: var(--font-size-sec-title);
+  }
+  main .marquee .more {
+    width: 150px;
+    height: 45px;
+    line-height: 45px;
+    letter-spacing: 2px;
   }
 }
 @media (max-width: 480px) {
-  main .marquee .title {
-    font-size: 20px;
+  main .marquee {
+    margin: 0;
+  }
+  main .marquee .title p {
+    letter-spacing: 8px;
+    font-size: 68px;
   }
   main .marquee .title span {
-    font-size: 68px;
+    font-size: 20px;
   }
 }
 @media (max-width: 768px) {
-  main .more-link .title {
-    font-size: var(--font-size-sec-title);
+  main .more-link .title p {
+    font-size: 96px;
   }
   main .more-link .title span {
-    font-size: 96px;
+    font-size: var(--font-size-sec-title);
   }
 }
 @media (max-width: 480px) {
-  main .more-link .title {
-    font-size: 20px;
+  main .more-link .title p {
+    letter-spacing: 8px;
+    font-size: 68px;
   }
   main .more-link .title span {
-    font-size: 68px;
+    font-size: 20px;
+  }
+}
+@media (max-width: 768px) {
+  .more-link .related-img {
+    display: none;
+  }
+  .more-link .container .link {
+    padding: 30px 0;
+    flex-wrap: wrap;
   }
 }/*# sourceMappingURL=style.css.map */

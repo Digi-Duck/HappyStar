@@ -220,3 +220,15 @@ section {
     }
   }
 }
+@media (max-width: 768px) {
+  .main-container {
+    .banner {
+      display: none;
+    }
+  }
+  .main-container {
+    .banner-768 {
+      display: flex;
+    }
+  }
+}
