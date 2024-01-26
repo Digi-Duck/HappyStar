@@ -30,8 +30,7 @@ var swiper = new Swiper(".mySwiper", {
     },
   },
 });
-// AOS.js 動畫
-AOS.init();
+
 
 // GoTop //
 let goTop = document.querySelector(".goTop");
@@ -42,6 +41,8 @@ window.addEventListener("scroll", goTopActive);
 function goTopActive() {
   goTop.classList[window.scrollY >= 100 ? "add" : "remove"]("active");
 }
+// AOS.js 動畫
+AOS.init();
 
 // NavMenu //
 let menuBtn = document.querySelector('.nav-menu');
