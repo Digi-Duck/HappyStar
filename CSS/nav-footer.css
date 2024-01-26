@@ -73,10 +73,9 @@ body .goTop.active {
   opacity: 1;
 }
 body .goTop i,
-body .goTop p {
+body .goTop span {
   display: inline-block;
   color: var(--first-color);
-  font-size: 18px;
 }
 body .goTop i {
   transition: all 0.2s ease;
@@ -89,6 +88,15 @@ body .goTop:hover i {
   transform: translateY(-5px);
 }
 
+@media (max-width: 480px) {
+  body .goTop {
+    right: 30px;
+    bottom: 30px;
+    width: 50px;
+    height: 50px;
+    font-size: 12px;
+  }
+}
 .navbar {
   position: sticky;
   top: 0;
@@ -251,7 +259,7 @@ body .goTop:hover i {
 }
 .footer .container .info .content {
   margin-top: 30px;
-  width: 100%;
+  width: 70%;
   display: flex;
   flex-wrap: wrap;
   gap: 16px;
@@ -402,4 +410,4 @@ body .goTop:hover i {
     align-items: start;
     gap: 16px;
   }
-}/*# sourceMappingURL=nav-footer.css.map */
+}
