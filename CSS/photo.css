@@ -17,8 +17,8 @@
   margin-top: 28px;
 }
 .main-container .banner-768 .title p {
-  background: linear-gradient(to bottom, #aa0000, #d1d1d1, #ffffff);
-  background: -webkit-linear-gradient(to bottom, #aa0000, #d1d1d1, #ffffff);
+  background: linear-gradient(to bottom, #aa0000 20%, #d1d1d1, #ffffff);
+  background: -webkit-linear-gradient(to bottom, #aa0000 20%, #d1d1d1, #ffffff);
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
@@ -101,7 +101,7 @@ section .tags {
     font-size: 15px;
     font-weight: 900;
     color: inherit;
-    z-index: 99999;
+    z-index: 9;
   }
 }
 section .tags .tag {
@@ -212,4 +212,4 @@ section .area .photo p {
   .main-container .banner-768 {
     display: flex;
   }
-}
+}/*# sourceMappingURL=photo.css.map */

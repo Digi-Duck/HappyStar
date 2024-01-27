@@ -17,8 +17,8 @@
   margin-top: 28px;
 }
 .main-container .banner-768 .title p {
-  background: linear-gradient(to bottom, #aa0000, #d1d1d1, #ffffff);
-  background: -webkit-linear-gradient(to bottom, #aa0000, #d1d1d1, #ffffff);
+  background: linear-gradient(to bottom, #aa0000 20%, #d1d1d1, #ffffff);
+  background: -webkit-linear-gradient(to bottom, #aa0000 20%, #d1d1d1, #ffffff);
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
@@ -175,4 +175,4 @@
   .main-container .banner-768 .title span {
     font-size: 24px;
   }
-}
+}/*# sourceMappingURL=service.css.map */

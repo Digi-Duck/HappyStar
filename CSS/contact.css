@@ -40,8 +40,8 @@
   margin-top: 28px;
 }
 .main-container .banner-768 .title p {
-  background: linear-gradient(to bottom, #aa0000, #d1d1d1, #ffffff);
-  background: -webkit-linear-gradient(to bottom, #aa0000, #d1d1d1, #ffffff);
+  background: linear-gradient(to bottom, #aa0000 20%, #d1d1d1, #ffffff);
+  background: -webkit-linear-gradient(to bottom, #aa0000 20%, #d1d1d1, #ffffff);
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
@@ -147,8 +147,8 @@
   margin: 28px 0 80px 0;
 }
 .main-container .contactus .title p {
-  background: linear-gradient(to bottom, #aa0000, #d1d1d1, #ffffff);
-  background: -webkit-linear-gradient(to bottom, #aa0000, #d1d1d1, #ffffff);
+  background: linear-gradient(to bottom, #aa0000 20%, #d1d1d1, #ffffff);
+  background: -webkit-linear-gradient(to bottom, #aa0000 20%, #d1d1d1, #ffffff);
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
@@ -444,4 +444,4 @@
   .main-container .contactus .contact-form-all .contact-icon a .line-link img:last-child {
     display: none;
   }
-}
+}/*# sourceMappingURL=contact.css.map */

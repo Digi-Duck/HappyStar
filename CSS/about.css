@@ -18,8 +18,8 @@
   margin-top: 28px;
 }
 .main-container .banner-768 .title p {
-  background: linear-gradient(to bottom, #aa0000, #d1d1d1, #ffffff);
-  background: -webkit-linear-gradient(to bottom, #aa0000, #d1d1d1, #ffffff);
+  background: linear-gradient(to bottom, #aa0000 20%, #d1d1d1, #ffffff);
+  background: -webkit-linear-gradient(to bottom, #aa0000 20%, #d1d1d1, #ffffff);
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
@@ -207,7 +207,7 @@
   }
   .star-right {
     top: -100px;
-    width: 68%;
+    width: 58%;
     margin-left: 100px;
   }
   .star-center {
@@ -274,4 +274,4 @@
   .article-1 {
     margin-top: 20px;
   }
-}
+}/*# sourceMappingURL=about.css.map */

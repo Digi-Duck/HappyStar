@@ -259,7 +259,7 @@ body .goTop:hover i {
 }
 .footer .container .info .content {
   margin-top: 30px;
-  width: 70%;
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
   gap: 16px;
@@ -376,7 +376,7 @@ body .goTop:hover i {
     height: 40px;
   }
   .footer .container .info .content {
-    width: 100%;
+    width: 70%;
     font-size: 16px;
     margin-top: 0;
     justify-content: center;
@@ -410,4 +410,4 @@ body .goTop:hover i {
     align-items: start;
     gap: 16px;
   }
-}
+}/*# sourceMappingURL=nav-footer.css.map */

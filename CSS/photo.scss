@@ -37,10 +37,12 @@ $phone-media: 498px;
       text-align: center;
       margin-top: 28px;
       p {
-        background: linear-gradient(to bottom, #aa0000, #d1d1d1, #ffffff);
+        background: linear-gradient(to bottom,  #aa0000 20%,
+        #d1d1d1,
+        #ffffff);
         background: -webkit-linear-gradient(
           to bottom,
-          #aa0000,
+          #aa0000 20%,
           #d1d1d1,
           #ffffff
         );
@@ -119,7 +121,7 @@ section {
         font-size: 15px;
         font-weight: 900;
         color: inherit;
-        z-index: 99999;
+        z-index:9;
       }
     }
     .tag {

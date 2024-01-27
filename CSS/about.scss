@@ -21,11 +21,13 @@
       margin-top: 28px;
 
       p {
-        background: linear-gradient(to bottom, #aa0000, #d1d1d1, #ffffff);
+        background: linear-gradient(to bottom,  #aa0000 20%,
+        #d1d1d1,
+        #ffffff);
         background: -webkit-linear-gradient(to bottom,
-            #aa0000,
-            #d1d1d1,
-            #ffffff);
+        #aa0000 20%,
+        #d1d1d1,
+        #ffffff);
         background-clip: text;
         -webkit-background-clip: text;
         color: transparent;
@@ -230,7 +232,7 @@
   }
   .star-right {
     top:-100px;
-    width: 68%;
+    width: 58%;
     margin-left: 100px;
   }
   .star-center {

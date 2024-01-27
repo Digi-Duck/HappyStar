@@ -1019,8 +1019,14 @@ main .service .more:hover {
 }
 @media (max-width: 480px) {
   main .service .container {
-    padding-block: 128px;
+    padding-block: 28px;
     gap: 0;
+  }
+  main .service .container::after {
+    display: none;
+  }
+  main .service .container::before {
+    display: none;
   }
   main .service .container .title p {
     letter-spacing: 8px;
@@ -1028,6 +1034,9 @@ main .service .more:hover {
   }
   main .service .container .title span {
     font-size: 20px;
+  }
+  main .service .container .service-line {
+    display: none;
   }
 }
 @media (max-width: 768px) {
@@ -1047,6 +1056,19 @@ main .service .more:hover {
 @media (max-width: 480px) {
   main .marquee {
     margin: 0;
+  }
+  main .marquee .photo-container {
+    align-items: start;
+  }
+  main .marquee .photo-container .view {
+    width: 100%;
+  }
+  main .marquee .photo-container .view:nth-of-type(2) {
+    left: 0%;
+  }
+  main .marquee .title {
+    margin-bottom: 0;
+    margin-top: 28px;
   }
   main .marquee .title p {
     letter-spacing: 8px;
@@ -1082,3 +1104,12 @@ main .service .more:hover {
     flex-wrap: wrap;
   }
 }
+@media (max-width: 480px) {
+  body .main-container .goTop {
+    right: 30px;
+    bottom: 30px;
+    width: 50px;
+    height: 50px;
+    font-size: 12px;
+  }
+}/*# sourceMappingURL=style.css.map */
